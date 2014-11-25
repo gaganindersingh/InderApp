@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vbk-07-NEO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ilq-rf-NEH">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationContollerIdentifer" id="Vbk-07-NEO" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mDv-GD-v49">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jnL-Ll-Axo" kind="relationship" relationship="rootViewController" id="ZuL-ZQ-FMk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLv-Yw-zbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="46"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="zeb-Ad-fBd">
+            <objects>
+                <viewController id="jnL-Ll-Axo" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0w0-Yr-CLB"/>
+                        <viewControllerLayoutGuide type="bottom" id="8s8-D3-auo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mbt-Ij-zCd" customClass="LoginView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8dw-hE-zvx"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="objLoginView" destination="Mbt-Ij-zCd" id="bXr-vl-7ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZc-sp-zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104" y="46"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="W3P-XQ-Rsg">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewControllerIdenntifer" id="whV-K8-2Wb" customClass="SignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o2u-SK-4PQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fun-DF-cxZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4nt-8V-voh" customClass="SignUpView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="objSignUpView" destination="4nt-8V-voh" id="wTV-Zu-ez7"/>
+                        <outlet property="view" destination="4nt-8V-voh" id="b3N-6g-aLm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB4-YG-mgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="46"/>
+        </scene>
+    </scenes>
+</document>

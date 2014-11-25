@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpView">
+            <connections>
+                <outlet property="btnCheckBox" destination="9QN-Op-jey" id="x6b-dd-4g0"/>
+                <outlet property="objMovingImages" destination="8xu-ES-hRi" id="ZYM-9Q-DXa"/>
+                <outlet property="scrollView" destination="nLm-RP-dDV" id="Nla-Pk-54j"/>
+                <outlet property="txtFieldAge" destination="Jp2-CV-8X3" id="iu6-yB-n80"/>
+                <outlet property="txtFieldDeliveryAddress" destination="aJP-5t-ggO" id="Xir-D1-i6F"/>
+                <outlet property="txtFieldEmail" destination="onI-Cf-Wp0" id="n2y-O8-FvI"/>
+                <outlet property="txtFieldName" destination="P1o-m1-RTK" id="saj-8h-7qU"/>
+                <outlet property="txtFieldPassword" destination="XaQ-hS-Oaq" id="x9S-YC-eAN"/>
+                <outlet property="txtFieldUserName" destination="638-g0-yez" id="bAy-VH-h3j"/>
+                <outlet property="vwAlltxtFieldsBg" destination="muu-Ua-Gb6" id="6hC-TZ-3Y3"/>
+                <outlet property="vwCircle" destination="tWr-SD-60y" id="Uaw-a5-F6l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xu-ES-hRi" customClass="MovingImages">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLm-RP-dDV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dc1-QW-c4G">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo5.png" translatesAutoresizingMaskIntoConstraints="NO" id="oaz-rS-njb">
+                                    <rect key="frame" x="46" y="8" width="229" height="109"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="muu-Ua-Gb6">
+                                    <rect key="frame" x="20" y="117" width="281" height="347"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-ry-PM0">
+                                            <rect key="frame" x="11" y="73" width="259" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="onI-Cf-Wp0">
+                                                    <rect key="frame" x="12" y="2" width="233" height="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="LlJ-cI-8DW"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.4901961088180542" green="0.4901961088180542" blue="0.4901961088180542" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-cY-KbV">
+                                            <rect key="frame" x="11" y="119" width="259" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@USERNAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="638-g0-yez">
+                                                    <rect key="frame" x="12" y="2" width="233" height="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="j5L-v3-9j0"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-SR-ith">
+                                            <rect key="frame" x="11" y="165" width="259" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XaQ-hS-Oaq">
+                                                    <rect key="frame" x="12" y="2" width="233" height="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="ZUj-jA-U1D"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-H1-7fG">
+                                            <rect key="frame" x="11" y="211" width="259" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@DELEVERY ADDRESS" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-5t-ggO">
+                                                    <rect key="frame" x="12" y="2" width="233" height="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="IMl-xJ-ali"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abk-1F-xq4">
+                                            <rect key="frame" x="60" y="262" width="159" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@AGE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-CV-8X3">
+                                                    <rect key="frame" x="7" y="3" width="145" height="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="Ss5-ad-hdv"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QN-Op-jey">
+                                            <rect key="frame" x="11" y="311" width="25" height="25"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnCheckBoxAction:" destination="-1" eventType="touchUpInside" id="dNb-lI-dDH"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ARE YOU INTERSTED IN DRIVING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laM-vM-xhU">
+                                            <rect key="frame" x="42" y="313" width="227" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWr-SD-60y">
+                                            <rect key="frame" x="10" y="6" width="60" height="60"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgZ-Zs-nXw">
+                                            <rect key="frame" x="79" y="16" width="191" height="40"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-m1-RTK">
+                                                    <rect key="frame" x="5" y="4" width="178" height="32"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="-1" id="dFb-gm-oRz"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dud-Ae-RFi">
+                                    <rect key="frame" x="52" y="470" width="221" height="44"/>
+                                    <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                    <state key="normal" title="SIGN UP">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSignUpAction:" destination="-1" eventType="touchUpInside" id="0tY-Pj-RLE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blx-WL-rhp">
+                                    <rect key="frame" x="206" y="519" width="108" height="44"/>
+                                    <color key="backgroundColor" red="0.49019610879999997" green="0.49019610879999997" blue="0.49019610879999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                    <state key="normal" title="LOG IN">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnLoginAction:" destination="-1" eventType="touchUpInside" id="gZZ-Wg-8ee"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="NPJ-PN-d7v"/>
+                                <constraint firstAttribute="height" constant="568" id="XNc-jw-QLm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dc1-QW-c4G" firstAttribute="leading" secondItem="nLm-RP-dDV" secondAttribute="leading" id="3PL-iq-NXO"/>
+                        <constraint firstItem="dc1-QW-c4G" firstAttribute="top" secondItem="nLm-RP-dDV" secondAttribute="top" id="Bn1-gL-wOu"/>
+                        <constraint firstAttribute="bottom" secondItem="dc1-QW-c4G" secondAttribute="bottom" constant="72" id="Heq-m1-eqe"/>
+                        <constraint firstAttribute="trailing" secondItem="dc1-QW-c4G" secondAttribute="trailing" id="zrB-n7-ebk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nLm-RP-dDV" secondAttribute="trailing" id="AXr-ar-D7o"/>
+                <constraint firstItem="nLm-RP-dDV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GXB-tb-dsa"/>
+                <constraint firstItem="8xu-ES-hRi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mv4-c1-WI6"/>
+                <constraint firstItem="8xu-ES-hRi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N6Y-a3-UNR"/>
+                <constraint firstAttribute="bottom" secondItem="nLm-RP-dDV" secondAttribute="bottom" constant="-72" id="i3L-bu-oo4"/>
+                <constraint firstAttribute="trailing" secondItem="8xu-ES-hRi" secondAttribute="trailing" id="t53-qX-HAc"/>
+                <constraint firstItem="nLm-RP-dDV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wlm-tR-q1x"/>
+                <constraint firstAttribute="bottom" secondItem="8xu-ES-hRi" secondAttribute="bottom" id="zSL-Fo-H4T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="66" y="1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo5.png" width="1168" height="482"/>
+    </resources>
+</document>
