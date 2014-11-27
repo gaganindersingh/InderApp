@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jnL-Ll-Axo" kind="relationship" relationship="rootViewController" id="ZuL-ZQ-FMk"/>
+                        <segue destination="8wM-Vw-wQJ" kind="relationship" relationship="rootViewController" id="HGi-Vs-7dB"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLv-Yw-zbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,7 +24,7 @@
         <!--Login View Controller-->
         <scene sceneID="zeb-Ad-fBd">
             <objects>
-                <viewController id="jnL-Ll-Axo" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewControllerIdentifier" id="jnL-Ll-Axo" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0w0-Yr-CLB"/>
                         <viewControllerLayoutGuide type="bottom" id="8s8-D3-auo"/>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZc-sp-zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="46"/>
+            <point key="canvasLocation" x="582" y="46"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="W3P-XQ-Rsg">
@@ -64,7 +64,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RB4-YG-mgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="46"/>
+            <point key="canvasLocation" x="928" y="46"/>
+        </scene>
+        <!--Start Up View Controller-->
+        <scene sceneID="ja6-Ux-JBU">
+            <objects>
+                <viewController storyboardIdentifier="StartUpViewControllerIdentifier" id="8wM-Vw-wQJ" customClass="StartUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1k8-pn-IUy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mrf-S7-GFY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U5y-TT-WKl" customClass="StartUpView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ee7-qN-Iny"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="objStartUpView" destination="U5y-TT-WKl" id="eOr-at-3Ej"/>
+                        <outlet property="view" destination="U5y-TT-WKl" id="kia-gq-UA7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liA-KK-fe3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="46"/>
+        </scene>
+        <!--Driver Sign Up View Controller-->
+        <scene sceneID="C7c-KL-ijj">
+            <objects>
+                <viewController storyboardIdentifier="DriverSignUpViewControllerIdenntifer" id="3fx-PC-els" customClass="DriverSignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HEm-fh-MDh"/>
+                        <viewControllerLayoutGuide type="bottom" id="CGn-eu-cq0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKr-2L-UJV" customClass="DriverSignUpView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="objDriverSignUpView" destination="gKr-2L-UJV" id="SQL-tZ-ceL"/>
+                        <outlet property="objSignUpView" destination="gKr-2L-UJV" id="CFM-BV-OrR"/>
+                        <outlet property="view" destination="gKr-2L-UJV" id="5ZW-g8-bzu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56a-JS-Vbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="46"/>
         </scene>
     </scenes>
 </document>

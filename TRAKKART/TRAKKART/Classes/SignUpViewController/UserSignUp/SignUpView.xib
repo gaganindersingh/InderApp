@@ -88,7 +88,7 @@
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGl-H1-7fG">
                                             <rect key="frame" x="11" y="211" width="259" height="40"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@DELEVERY ADDRESS" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-5t-ggO">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="@ADDRESS" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-5t-ggO">
                                                     <rect key="frame" x="12" y="2" width="233" height="35"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -207,7 +207,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="66" y="1"/>
+            <point key="canvasLocation" x="123" y="-68"/>
         </view>
     </objects>
     <resources>

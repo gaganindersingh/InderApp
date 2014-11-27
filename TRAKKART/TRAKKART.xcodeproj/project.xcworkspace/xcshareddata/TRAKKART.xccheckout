@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8CC40523-00BC-4DAB-89A1-C2EFF3E0AE22</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TRAKKART</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E6931F3E8C9BA9EDA716123B721184C2A2B3AC82</key>
+		<string>https://github.com/gaganindersingh/InderApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TRAKKART/TRAKKART.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E6931F3E8C9BA9EDA716123B721184C2A2B3AC82</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gaganindersingh/InderApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E6931F3E8C9BA9EDA716123B721184C2A2B3AC82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E6931F3E8C9BA9EDA716123B721184C2A2B3AC82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GaganApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
