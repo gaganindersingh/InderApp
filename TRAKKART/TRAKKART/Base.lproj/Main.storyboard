@@ -8,6 +8,7 @@
         <scene sceneID="ilq-rf-NEH">
             <objects>
                 <navigationController storyboardIdentifier="NavigationContollerIdentifer" id="Vbk-07-NEO" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mDv-GD-v49">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -75,11 +76,12 @@
                         <viewControllerLayoutGuide type="bottom" id="Mrf-S7-GFY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U5y-TT-WKl" customClass="StartUpView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ee7-qN-Iny"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="objStartUpView" destination="U5y-TT-WKl" id="eOr-at-3Ej"/>
@@ -101,17 +103,46 @@
                     <view key="view" contentMode="scaleToFill" id="gKr-2L-UJV" customClass="DriverSignUpView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="objDriverSignUpView" destination="gKr-2L-UJV" id="SQL-tZ-ceL"/>
-                        <outlet property="objSignUpView" destination="gKr-2L-UJV" id="CFM-BV-OrR"/>
-                        <outlet property="view" destination="gKr-2L-UJV" id="5ZW-g8-bzu"/>
+                        <outlet property="objDriverSignUpView" destination="gKr-2L-UJV" id="B7M-bw-l8b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56a-JS-Vbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1296" y="46"/>
+        </scene>
+        <!--Main Screen View Controller-->
+        <scene sceneID="3iT-S7-7LT">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewControllerIdentifier" id="yFh-oN-Lhb" customClass="MainScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XFI-kl-wdV"/>
+                        <viewControllerLayoutGuide type="bottom" id="usx-Y2-GfG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Edu-h7-oCc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Feature is under development" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyH-rh-ouz">
+                                <rect key="frame" x="0.0" y="118" width="320" height="103"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="view" destination="Edu-h7-oCc" id="bEB-pg-UcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8E-Od-YNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="46"/>
         </scene>
     </scenes>
 </document>

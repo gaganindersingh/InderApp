@@ -57,7 +57,14 @@
     [vwCollectionView registerNib:cellNib forCellWithReuseIdentifier:KMoviewImageCollectionViewCellIdentifer];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    [flowLayout setItemSize:CGSizeMake(self.frame.size.width,self.frame.size.height)];
+    
+     CGRect screenRect = [[UIScreen mainScreen] bounds];
+    [flowLayout setItemSize:screenRect.size];
+    
+    AppDelegate *delegate=(AppDelegate *)KAppDelegate;
+    
+    //NSLog(@"Size %@", NSStringFromCGSize(delegate.window.bounds.size));
+    
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [vwCollectionView setCollectionViewLayout:flowLayout];
     
@@ -89,7 +96,12 @@
     
     UIImage *image = [arrAminationImages objectAtIndex:indexPath.row];
     MovingImageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KMoviewImageCollectionViewCellIdentifer forIndexPath:indexPath];
-
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+  
+    cell.frame=CGRectMake(cell.frame.origin.x-10, cell.frame.origin.y-10,screenRect.size.width+10,screenRect.size
+                          .height+10);
+    
     [cell setImage:image];
 
     return cell;

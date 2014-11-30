@@ -10,6 +10,32 @@
 		CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA61A24FAF900ED386F /* StartUpViewController.m */; };
 		CE464FAA1A24FB5900ED386F /* StartUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA91A24FB5900ED386F /* StartUpView.m */; };
 		CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE464FAB1A24FB8A00ED386F /* StartUpView.xib */; };
+		CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8ADD401A2A23F7006E8C36 /* SignUp.m */; };
+		CE8ADD461A2ACC45006E8C36 /* arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD431A2ACC45006E8C36 /* arrow_icon.png */; };
+		CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD441A2ACC45006E8C36 /* arrow_icon@2x.png */; };
+		CE8ADD481A2ACC45006E8C36 /* arrow_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD451A2ACC45006E8C36 /* arrow_icon@3x.png */; };
+		CE8ADD4D1A2AE8C6006E8C36 /* Checked_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD4A1A2AE8C5006E8C36 /* Checked_icon.png */; };
+		CE8ADD4E1A2AE8C6006E8C36 /* Checked_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD4B1A2AE8C5006E8C36 /* Checked_icon@2x.png */; };
+		CE8ADD4F1A2AE8C6006E8C36 /* Checked_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD4C1A2AE8C5006E8C36 /* Checked_icon@3x.png */; };
+		CE8ADD531A2B0010006E8C36 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8ADD521A2B0010006E8C36 /* MainScreenViewController.m */; };
+		CE8ADD681A2B07D3006E8C36 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD551A2B07D3006E8C36 /* Background.png */; };
+		CE8ADD691A2B07D3006E8C36 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD561A2B07D3006E8C36 /* Background@2x.png */; };
+		CE8ADD6A1A2B07D3006E8C36 /* Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD571A2B07D3006E8C36 /* Background@3x.png */; };
+		CE8ADD6B1A2B07D3006E8C36 /* ForgotPassword.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD581A2B07D3006E8C36 /* ForgotPassword.png */; };
+		CE8ADD6C1A2B07D3006E8C36 /* ForgotPassword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD591A2B07D3006E8C36 /* ForgotPassword@2x.png */; };
+		CE8ADD6D1A2B07D3006E8C36 /* ForgotPassword@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */; };
+		CE8ADD6F1A2B07D3006E8C36 /* LogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */; };
+		CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */; };
+		CE8ADD711A2B07D3006E8C36 /* Login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */; };
+		CE8ADD721A2B07D3006E8C36 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5F1A2B07D3006E8C36 /* Logo.png */; };
+		CE8ADD731A2B07D3006E8C36 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */; };
+		CE8ADD741A2B07D3006E8C36 /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */; };
+		CE8ADD751A2B07D3006E8C36 /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD621A2B07D3006E8C36 /* Password.png */; };
+		CE8ADD761A2B07D3006E8C36 /* Password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD631A2B07D3006E8C36 /* Password@2x.png */; };
+		CE8ADD771A2B07D3006E8C36 /* Password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD641A2B07D3006E8C36 /* Password@3x.png */; };
+		CE8ADD781A2B07D3006E8C36 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD651A2B07D3006E8C36 /* Username.png */; };
+		CE8ADD791A2B07D3006E8C36 /* Username@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD661A2B07D3006E8C36 /* Username@2x.png */; };
+		CE8ADD7A1A2B07D3006E8C36 /* Username@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD671A2B07D3006E8C36 /* Username@3x.png */; };
 		CEA6AE511A2554730042B111 /* DriverSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */; };
 		CEA6AE521A2554730042B111 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4D1A2554730042B111 /* SignUpView.m */; };
 		CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6AE4E1A2554730042B111 /* SignUpView.xib */; };
@@ -40,9 +66,6 @@
 		CEDBE55A1A2071B7009DDF8A /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE5551A2071B7009DDF8A /* image3.jpg */; };
 		CEDBE55B1A2071B7009DDF8A /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE5561A2071B7009DDF8A /* image4.jpg */; };
 		CEDBE55C1A2071B7009DDF8A /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE5571A2071B7009DDF8A /* image5.jpg */; };
-		CEDBE5601A207463009DDF8A /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE55D1A207463009DDF8A /* Background.png */; };
-		CEDBE5611A207463009DDF8A /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE55E1A207463009DDF8A /* Background@2x.png */; };
-		CEDBE5621A207463009DDF8A /* Background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE55F1A207463009DDF8A /* Background@3x.png */; };
 		CEDBE59C1A20964D009DDF8A /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBE59B1A20964D009DDF8A /* libsqlite3.0.dylib */; };
 		CEDBE5AA1A209927009DDF8A /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBE5A91A209927009DDF8A /* UserInfoManager.m */; };
 		CEDBE5FA1A209969009DDF8A /* APPUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBE5C51A209969009DDF8A /* APPUtility.m */; };
@@ -77,6 +100,34 @@
 		CE464FA81A24FB5900ED386F /* StartUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpView.h; sourceTree = "<group>"; };
 		CE464FA91A24FB5900ED386F /* StartUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpView.m; sourceTree = "<group>"; };
 		CE464FAB1A24FB8A00ED386F /* StartUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartUpView.xib; sourceTree = "<group>"; };
+		CE8ADD3F1A2A23F7006E8C36 /* SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUp.h; sourceTree = "<group>"; };
+		CE8ADD401A2A23F7006E8C36 /* SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUp.m; sourceTree = "<group>"; };
+		CE8ADD431A2ACC45006E8C36 /* arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon.png; sourceTree = "<group>"; };
+		CE8ADD441A2ACC45006E8C36 /* arrow_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_icon@2x.png"; sourceTree = "<group>"; };
+		CE8ADD451A2ACC45006E8C36 /* arrow_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_icon@3x.png"; sourceTree = "<group>"; };
+		CE8ADD4A1A2AE8C5006E8C36 /* Checked_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checked_icon.png; sourceTree = "<group>"; };
+		CE8ADD4B1A2AE8C5006E8C36 /* Checked_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked_icon@2x.png"; sourceTree = "<group>"; };
+		CE8ADD4C1A2AE8C5006E8C36 /* Checked_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checked_icon@3x.png"; sourceTree = "<group>"; };
+		CE8ADD511A2B0010006E8C36 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
+		CE8ADD521A2B0010006E8C36 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		CE8ADD551A2B07D3006E8C36 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = "../Log In Screen/Background.png"; sourceTree = "<group>"; };
+		CE8ADD561A2B07D3006E8C36 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background@2x.png"; path = "../Log In Screen/Background@2x.png"; sourceTree = "<group>"; };
+		CE8ADD571A2B07D3006E8C36 /* Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Background@3x.png"; path = "../Log In Screen/Background@3x.png"; sourceTree = "<group>"; };
+		CE8ADD581A2B07D3006E8C36 /* ForgotPassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForgotPassword.png; sourceTree = "<group>"; };
+		CE8ADD591A2B07D3006E8C36 /* ForgotPassword@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForgotPassword@2x.png"; sourceTree = "<group>"; };
+		CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForgotPassword@3x.png"; sourceTree = "<group>"; };
+		CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogIn.png; sourceTree = "<group>"; };
+		CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogIn@2x.png"; sourceTree = "<group>"; };
+		CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login@3x.png"; sourceTree = "<group>"; };
+		CE8ADD5F1A2B07D3006E8C36 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
+		CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@3x.png"; sourceTree = "<group>"; };
+		CE8ADD621A2B07D3006E8C36 /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Password.png; sourceTree = "<group>"; };
+		CE8ADD631A2B07D3006E8C36 /* Password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Password@2x.png"; sourceTree = "<group>"; };
+		CE8ADD641A2B07D3006E8C36 /* Password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Password@3x.png"; sourceTree = "<group>"; };
+		CE8ADD651A2B07D3006E8C36 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
+		CE8ADD661A2B07D3006E8C36 /* Username@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@2x.png"; sourceTree = "<group>"; };
+		CE8ADD671A2B07D3006E8C36 /* Username@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@3x.png"; sourceTree = "<group>"; };
 		CEA6AE491A2554730042B111 /* DriverSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverSignUpViewController.h; sourceTree = "<group>"; };
 		CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverSignUpViewController.m; sourceTree = "<group>"; };
 		CEA6AE4C1A2554730042B111 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
@@ -123,9 +174,6 @@
 		CEDBE5551A2071B7009DDF8A /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		CEDBE5561A2071B7009DDF8A /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 		CEDBE5571A2071B7009DDF8A /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
-		CEDBE55D1A207463009DDF8A /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
-		CEDBE55E1A207463009DDF8A /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
-		CEDBE55F1A207463009DDF8A /* Background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@3x.png"; sourceTree = "<group>"; };
 		CEDBE59B1A20964D009DDF8A /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		CEDBE5A81A209927009DDF8A /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
 		CEDBE5A91A209927009DDF8A /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
@@ -189,6 +237,66 @@
 				CE464FAB1A24FB8A00ED386F /* StartUpView.xib */,
 			);
 			path = StartUpScreen;
+			sourceTree = "<group>";
+		};
+		CE8ADD3E1A2A23E4006E8C36 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD3F1A2A23F7006E8C36 /* SignUp.h */,
+				CE8ADD401A2A23F7006E8C36 /* SignUp.m */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CE8ADD421A2ACC45006E8C36 /* DriverSignUpIcon */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD431A2ACC45006E8C36 /* arrow_icon.png */,
+				CE8ADD441A2ACC45006E8C36 /* arrow_icon@2x.png */,
+				CE8ADD451A2ACC45006E8C36 /* arrow_icon@3x.png */,
+			);
+			path = DriverSignUpIcon;
+			sourceTree = "<group>";
+		};
+		CE8ADD491A2AE8BC006E8C36 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD4A1A2AE8C5006E8C36 /* Checked_icon.png */,
+				CE8ADD4B1A2AE8C5006E8C36 /* Checked_icon@2x.png */,
+				CE8ADD4C1A2AE8C5006E8C36 /* Checked_icon@3x.png */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		CE8ADD501A2AFFBE006E8C36 /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD511A2B0010006E8C36 /* MainScreenViewController.h */,
+				CE8ADD521A2B0010006E8C36 /* MainScreenViewController.m */,
+			);
+			path = DashboardViewController;
+			sourceTree = "<group>";
+		};
+		CE8ADD541A2B07D3006E8C36 /* Log In Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD581A2B07D3006E8C36 /* ForgotPassword.png */,
+				CE8ADD591A2B07D3006E8C36 /* ForgotPassword@2x.png */,
+				CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */,
+				CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */,
+				CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */,
+				CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */,
+				CE8ADD5F1A2B07D3006E8C36 /* Logo.png */,
+				CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */,
+				CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */,
+				CE8ADD621A2B07D3006E8C36 /* Password.png */,
+				CE8ADD631A2B07D3006E8C36 /* Password@2x.png */,
+				CE8ADD641A2B07D3006E8C36 /* Password@3x.png */,
+				CE8ADD651A2B07D3006E8C36 /* Username.png */,
+				CE8ADD661A2B07D3006E8C36 /* Username@2x.png */,
+				CE8ADD671A2B07D3006E8C36 /* Username@3x.png */,
+			);
+			path = "Log In Screen";
 			sourceTree = "<group>";
 		};
 		CEA6AE481A2554730042B111 /* DriverSignUp */ = {
@@ -283,6 +391,7 @@
 		CEDBE4921A2055E9009DDF8A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CE8ADD501A2AFFBE006E8C36 /* DashboardViewController */,
 				CE464FA41A24FAD000ED386F /* StartUpScreen */,
 				CEDBE4931A2055E9009DDF8A /* BaseViewContoller */,
 				CEDBE4991A2055E9009DDF8A /* LoginViewController */,
@@ -337,9 +446,9 @@
 			children = (
 				CEDBE5411A205847009DDF8A /* MovingImageCollectionViewCell.h */,
 				CEDBE5421A205847009DDF8A /* MovingImageCollectionViewCell.m */,
+				CEDBE5451A205847009DDF8A /* MovingImageCollectionViewCell.xib */,
 				CEDBE5431A205847009DDF8A /* MovingImages.h */,
 				CEDBE5441A205847009DDF8A /* MovingImages.m */,
-				CEDBE5451A205847009DDF8A /* MovingImageCollectionViewCell.xib */,
 				CEDBE5461A205847009DDF8A /* MovingImages.xib */,
 			);
 			name = CustomContolMovingImages;
@@ -349,6 +458,9 @@
 		CEDBE5511A2071B7009DDF8A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CE8ADD541A2B07D3006E8C36 /* Log In Screen */,
+				CE8ADD491A2AE8BC006E8C36 /* SignUp */,
+				CE8ADD421A2ACC45006E8C36 /* DriverSignUpIcon */,
 				CEDBE54B1A206331009DDF8A /* Logo4.png */,
 				CEDBE54C1A206331009DDF8A /* Logo5.png */,
 				CEDBE54D1A206331009DDF8A /* Logo6.png */,
@@ -360,10 +472,10 @@
 		CEDBE5521A2071B7009DDF8A /* MovingImage */ = {
 			isa = PBXGroup;
 			children = (
-				CEDBE55D1A207463009DDF8A /* Background.png */,
-				CEDBE55E1A207463009DDF8A /* Background@2x.png */,
-				CEDBE55F1A207463009DDF8A /* Background@3x.png */,
 				CEDBE5531A2071B7009DDF8A /* image1.jpg */,
+				CE8ADD551A2B07D3006E8C36 /* Background.png */,
+				CE8ADD561A2B07D3006E8C36 /* Background@2x.png */,
+				CE8ADD571A2B07D3006E8C36 /* Background@3x.png */,
 				CEDBE5541A2071B7009DDF8A /* image2.jpg */,
 				CEDBE5551A2071B7009DDF8A /* image3.jpg */,
 				CEDBE5561A2071B7009DDF8A /* image4.jpg */,
@@ -522,6 +634,7 @@
 		CEDBE5EB1A209969009DDF8A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE8ADD3E1A2A23E4006E8C36 /* SignUp */,
 				CEDBE6081A20997B009DDF8A /* UserInfo */,
 			);
 			path = Model;
@@ -616,25 +729,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8ADD4F1A2AE8C6006E8C36 /* Checked_icon@3x.png in Resources */,
+				CE8ADD741A2B07D3006E8C36 /* Logo@3x.png in Resources */,
+				CE8ADD731A2B07D3006E8C36 /* Logo@2x.png in Resources */,
 				CEDBE55A1A2071B7009DDF8A /* image3.jpg in Resources */,
-				CEDBE5601A207463009DDF8A /* Background.png in Resources */,
+				CE8ADD771A2B07D3006E8C36 /* Password@3x.png in Resources */,
 				CEDBE55C1A2071B7009DDF8A /* image5.jpg in Resources */,
 				CEA6AE591A2555610042B111 /* DriverSignUpView.xib in Resources */,
-				CEDBE5621A207463009DDF8A /* Background@3x.png in Resources */,
+				CE8ADD4D1A2AE8C6006E8C36 /* Checked_icon.png in Resources */,
+				CE8ADD6A1A2B07D3006E8C36 /* Background@3x.png in Resources */,
+				CE8ADD681A2B07D3006E8C36 /* Background.png in Resources */,
+				CE8ADD6B1A2B07D3006E8C36 /* ForgotPassword.png in Resources */,
+				CE8ADD461A2ACC45006E8C36 /* arrow_icon.png in Resources */,
+				CE8ADD761A2B07D3006E8C36 /* Password@2x.png in Resources */,
+				CE8ADD711A2B07D3006E8C36 /* Login@3x.png in Resources */,
+				CE8ADD6D1A2B07D3006E8C36 /* ForgotPassword@3x.png in Resources */,
 				CEDBE53A1A2055EA009DDF8A /* LoginView.xib in Resources */,
 				CEDBE54E1A206331009DDF8A /* Logo4.png in Resources */,
 				CEDBE5FC1A209969009DDF8A /* Cache.sqlite in Resources */,
-				CEDBE5611A207463009DDF8A /* Background@2x.png in Resources */,
+				CE8ADD6C1A2B07D3006E8C36 /* ForgotPassword@2x.png in Resources */,
+				CE8ADD751A2B07D3006E8C36 /* Password.png in Resources */,
 				CEDBE54F1A206331009DDF8A /* Logo5.png in Resources */,
 				CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */,
+				CE8ADD7A1A2B07D3006E8C36 /* Username@3x.png in Resources */,
 				CEDBE55B1A2071B7009DDF8A /* image4.jpg in Resources */,
+				CE8ADD4E1A2AE8C6006E8C36 /* Checked_icon@2x.png in Resources */,
 				CEDBE3E41A2055CA009DDF8A /* Main.storyboard in Resources */,
+				CE8ADD691A2B07D3006E8C36 /* Background@2x.png in Resources */,
+				CE8ADD781A2B07D3006E8C36 /* Username.png in Resources */,
 				CEDBE5371A2055EA009DDF8A /* BaseView.xib in Resources */,
 				CEDBE5581A2071B7009DDF8A /* image1.jpg in Resources */,
 				CEDBE5501A206331009DDF8A /* Logo6.png in Resources */,
+				CE8ADD791A2B07D3006E8C36 /* Username@2x.png in Resources */,
+				CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */,
+				CE8ADD481A2ACC45006E8C36 /* arrow_icon@3x.png in Resources */,
+				CE8ADD6F1A2B07D3006E8C36 /* LogIn.png in Resources */,
 				CEDBE54A1A205847009DDF8A /* MovingImages.xib in Resources */,
 				CEDBE3E91A2055CA009DDF8A /* LaunchScreen.xib in Resources */,
+				CE8ADD721A2B07D3006E8C36 /* Logo.png in Resources */,
 				CEDBE3E61A2055CA009DDF8A /* Images.xcassets in Resources */,
+				CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */,
 				CEDBE5591A2071B7009DDF8A /* image2.jpg in Resources */,
 				CEDBE5491A205847009DDF8A /* MovingImageCollectionViewCell.xib in Resources */,
 				CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */,
@@ -656,6 +790,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDBE6031A209969009DDF8A /* WebserviceManager.m in Sources */,
+				CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */,
 				CEDBE5391A2055EA009DDF8A /* LoginView.m in Sources */,
 				CEDBE6001A209969009DDF8A /* NSIProgressView.m in Sources */,
 				CEDBE6051A209969009DDF8A /* WebserviceResponseParser.m in Sources */,
@@ -663,6 +798,7 @@
 				CEDBE3DE1A2055CA009DDF8A /* AppDelegate.m in Sources */,
 				CEDBE5FE1A209969009DDF8A /* Loader.m in Sources */,
 				CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */,
+				CE8ADD531A2B0010006E8C36 /* MainScreenViewController.m in Sources */,
 				CEDBE6021A209969009DDF8A /* WebserviceCall.m in Sources */,
 				CEDBE5471A205847009DDF8A /* MovingImageCollectionViewCell.m in Sources */,
 				CEA6AE521A2554730042B111 /* SignUpView.m in Sources */,

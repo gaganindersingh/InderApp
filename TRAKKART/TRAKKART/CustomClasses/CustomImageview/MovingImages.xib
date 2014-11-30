@@ -30,14 +30,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="y6b-vx-iXH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hZf-IB-8V4"/>
-                <constraint firstAttribute="trailing" secondItem="y6b-vx-iXH" secondAttribute="trailing" id="o4d-EH-qer"/>
-                <constraint firstItem="y6b-vx-iXH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qI8-HV-ntY"/>
-                <constraint firstAttribute="bottom" secondItem="y6b-vx-iXH" secondAttribute="bottom" constant="-18" id="tuX-xV-6YR"/>
+                <constraint firstAttribute="trailing" secondItem="y6b-vx-iXH" secondAttribute="trailing" id="3Rf-Uj-9Ac"/>
+                <constraint firstAttribute="bottom" secondItem="y6b-vx-iXH" secondAttribute="bottom" constant="-18" id="QCb-KN-JqH"/>
+                <constraint firstItem="y6b-vx-iXH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dpA-5o-AXo"/>
+                <constraint firstItem="y6b-vx-iXH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oka-7e-cHF"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="117" y="41"/>
+            <point key="canvasLocation" x="185" y="52"/>
         </view>
     </objects>
 </document>

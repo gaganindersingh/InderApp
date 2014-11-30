@@ -10,22 +10,34 @@
 @class MovingImages;
 @protocol DriverSignUpViewDelegate <NSObject>
 
+
 @optional
 -(void)signUpDriver:(NSMutableDictionary *)dic;
+-(void)backButtonAction;
+
 @end
-@interface DriverSignUpView : UIView
+@interface DriverSignUpView : UIView<UITextFieldDelegate>
 {
     
     IBOutlet MovingImages *objMovingImages;
     
     IBOutlet UITextField *txtFieldPhoneNumber;
     IBOutlet UITextField *txtFieldAddress;
-    
     IBOutlet UITextField *txtFieldSocialSecurityNumber;
+    NSMutableDictionary *dicSignUpDriverData;
+    IBOutlet UIScrollView *scrollview;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaceOfLogoFromTop;
+    
 }
 @property (nonatomic,assign)id<DriverSignUpViewDelegate> delegate;
--(void)updateSignUpdate:(NSMutableDictionary *)data;
+
 - (IBAction)btnSignUp:(id)sender;
+- (IBAction)btnBackClicked:(id)sender;
+
+
+-(void)updateSignUpdate:(NSMutableDictionary *)data;
+-(NSMutableDictionary *)SendDataToSignUpView;
 -(void)startBackgroundAnimation;
 -(void)stopBackgroundAnimation;
 @end

@@ -10,6 +10,7 @@
 #import "MovingImages.h"
 #import "LoginView.h"
 #import "WebserviceCall.h"
+#import "MainScreenViewController.h"
 #import "WebserviceManager.h"
 @interface LoginViewController ()<LoginViewDelegate>
 
@@ -65,8 +66,17 @@
         {
             if([[data objectForKey:WebserviceResponseKey] isKindOfClass:[NSDictionary class]])
             {
+                
+                UIStoryboard *storyboard = nil;
+                
+                storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                MainScreenViewController *objMainScreenViewController=[storyboard instantiateViewControllerWithIdentifier:@"MainScreenViewControllerIdentifier"];
+                AppDelegate *delegate=(AppDelegate *)KAppDelegate;
+                [delegate.window setRootViewController:objMainScreenViewController];
+                
+                [self.navigationController popToRootViewControllerAnimated:YES];
                 // Response parser
-                [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Login Successfully" delegate:self];
+               // [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Login Successfully" delegate:self];
                 
             }
         }

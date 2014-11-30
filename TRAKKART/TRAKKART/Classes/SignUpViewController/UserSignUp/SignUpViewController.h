@@ -13,4 +13,7 @@
     
     IBOutlet SignUpView *objSignUpView;
 }
+
+-(void)updateSignUpDataValueFromDriverSignUp:(NSMutableDictionary *)dicData;
+-(void)deSelectDriverCheckBox;
 @end

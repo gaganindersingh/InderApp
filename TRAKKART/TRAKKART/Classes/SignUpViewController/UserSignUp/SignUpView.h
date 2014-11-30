@@ -13,6 +13,7 @@
 @optional
 -(void)moveToRootViewContoller;
 -(void)registerUser:(NSDictionary *)userData;
+-(void)registerDriver:(NSDictionary *)driverData;
 @end
 @interface SignUpView : UIView
 {
@@ -31,12 +32,27 @@
     IBOutlet UITextField *txtFieldUserName;
     
     IBOutlet UIButton *btnCheckBox;
+    NSMutableDictionary *dicSignUpData;
+    BOOL isDriver;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaceOfLogoFromTop;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaecOfDateDetailViewFromLogo;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaceOfSignUpButtonFromDataDetailView;
+    
+    IBOutlet NSLayoutConstraint *constraintVeticalSpaceOfLoginButtonFromSignUpBtn;
+    
 }
 
 @property (nonatomic,assign)id<SignUpViewDelegate> delegate;
 - (IBAction)btnCheckBoxAction:(id)sender;
 - (IBAction)btnSignUpAction:(id)sender;
 - (IBAction)btnLoginAction:(id)sender;
+
+-(void)unSelectedDriverCheckbox;
+-(void)resetFrame;
+-(void)UpdateViewData:(NSMutableDictionary *)dic;
 -(void)startBackgroundAnimation;
 -(void)stopBackgroundAnimation;
 @end

@@ -140,6 +140,15 @@
     return result;
 }
 
++(BOOL)isScreenGreaterThanIphone5
+{
+    CGFloat height = [[UIScreen mainScreen]bounds].size.height;
+    if (height > 568)
+        return YES;
+    else
+        return NO;
+}
+
 +(BOOL)isIphone5
 {
     CGFloat height = [[UIScreen mainScreen]bounds].size.height;
@@ -157,6 +166,7 @@
     else
         return NO;
 }
+
 
 #pragma mark - Get Path for Bundle File
 + (NSString *)getPathOfFileName:(NSString *)name type:(NSString *)type{

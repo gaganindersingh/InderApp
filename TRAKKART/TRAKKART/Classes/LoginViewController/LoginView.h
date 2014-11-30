@@ -34,6 +34,9 @@
     
     IBOutlet NSLayoutConstraint *constraintVerticalSpaceFromBottomOfSignUpBtn;
     IBOutlet NSLayoutConstraint *constraintVerticalSpaceFromTop_OfUsernameTxtField;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaceOfLogoFromTop;
+    
 }
 @property (nonatomic,assign)id<LoginViewDelegate> delegate;
 - (IBAction)btnLoginAction:(id)sender;

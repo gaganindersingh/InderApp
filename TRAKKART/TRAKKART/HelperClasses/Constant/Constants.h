@@ -11,6 +11,9 @@
 
 #define KMovingImageCollectionViewNib @"MovingImageCollectionViewCell"
 #define KMoviewImageCollectionViewCellIdentifer @"MoviewImageCollectionViewCellIdentifer"
+#define KAppDelegate @"[[UIApplication sharedApplication]delegate]"
+
+#define KLogoY_AxisFromTop @"60"
 
 
 #endif

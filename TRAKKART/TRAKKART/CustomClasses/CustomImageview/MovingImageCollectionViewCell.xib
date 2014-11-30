@@ -27,7 +27,7 @@
             <connections>
                 <outlet property="imgVwBackground" destination="IIq-pC-vT1" id="esf-Pn-6JU"/>
             </connections>
-            <point key="canvasLocation" x="274" y="-89"/>
+            <point key="canvasLocation" x="76" y="-380"/>
         </collectionViewCell>
     </objects>
 </document>

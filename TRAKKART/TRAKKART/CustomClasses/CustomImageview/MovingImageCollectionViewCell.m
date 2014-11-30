@@ -11,12 +11,13 @@
 @implementation MovingImageCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+ 
+  //  [self initlization];
 }
 
 -(void)initlization
 {
-    
+
 }
 
 #pragma mark - Set Background Image

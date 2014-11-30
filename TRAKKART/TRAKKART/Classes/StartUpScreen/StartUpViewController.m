@@ -18,6 +18,7 @@
     [super viewDidLoad];
     [objStartUpView startBackgroundAnimation];
     objStartUpView.delegate=self;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     [self.navigationController.navigationBar setHidden:YES];
     // Do any additional setup after loading the view.
 }

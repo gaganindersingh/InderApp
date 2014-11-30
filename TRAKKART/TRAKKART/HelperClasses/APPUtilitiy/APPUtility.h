@@ -18,6 +18,7 @@
 
 +(void)addBasicConstraintsOnSubView:(UIView *)subView onSuperView:(UIView *)superView;
 
++(BOOL)isScreenGreaterThanIphone5;
 + (BOOL)validateEmail:(NSString *)emailStr;
 
 +(void)showAlert:(NSString *)title withMessage:(NSString *)message delegate:(id)delegate;

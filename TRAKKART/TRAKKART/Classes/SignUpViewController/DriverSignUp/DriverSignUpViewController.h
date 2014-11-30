@@ -14,5 +14,6 @@
     IBOutlet DriverSignUpView *objDriverSignUpView;
 }
 
+
 @property (nonatomic,strong)NSMutableDictionary *dicSignUpData;
 @end

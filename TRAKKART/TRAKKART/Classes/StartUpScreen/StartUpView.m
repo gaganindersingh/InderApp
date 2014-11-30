@@ -36,7 +36,10 @@
 #pragma mark - Initlization Methods
 -(void)initlizationView
 {
-    
+    if([APPUtility isScreenGreaterThanIphone5])
+    {
+        constraintVerticalSpaceOfLogoFromTop.constant=[KLogoY_AxisFromTop intValue];
+    }
 }
 
 #pragma mark - Animation Methods

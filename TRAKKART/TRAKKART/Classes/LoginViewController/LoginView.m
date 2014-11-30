@@ -50,6 +50,12 @@
         constraintVerticalSpaceFromBottomOfSignUpBtn.constant=50;
     }
     
+    if([APPUtility isScreenGreaterThanIphone5]) // Setting For Greater Than Iphone 5
+    {
+        constraintVerticalSpaceOfLogoFromTop.constant=[KLogoY_AxisFromTop intValue];
+
+    }
+    
 }
 
 #pragma mark - IBAction Methods

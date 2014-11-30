@@ -17,6 +17,8 @@
 {
     
     IBOutlet MovingImages *objMovingImages;
+    
+    IBOutlet NSLayoutConstraint *constraintVerticalSpaceOfLogoFromTop;
 }
 
 @property (nonatomic,assign)id<StartUpViewDelegate> delegate;

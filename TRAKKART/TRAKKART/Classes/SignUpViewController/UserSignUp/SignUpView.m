@@ -45,93 +45,144 @@
     txtFieldName.attributedPlaceholder = [[NSAttributedString alloc] initWithString:txtFieldName.placeholder attributes:@{NSForegroundColorAttributeName: color}];
     
     txtFieldDeliveryAddress.attributedPlaceholder = [[NSAttributedString alloc] initWithString:txtFieldDeliveryAddress.placeholder attributes:@{NSForegroundColorAttributeName: color}];
+    btnCheckBox.layer.borderWidth=0.5;
+    btnCheckBox.layer.borderColor=[UIColor darkGrayColor].CGColor;
+    
+    UITapGestureRecognizer *detechTouchOnScrollViewGesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(detechTouchOnScrollViewGestureAction:)];
+    detechTouchOnScrollViewGesture.numberOfTouchesRequired=1;
+    detechTouchOnScrollViewGesture.numberOfTapsRequired=1;
+    [scrollView addGestureRecognizer:detechTouchOnScrollViewGesture];
+   
+    if([APPUtility isScreenGreaterThanIphone5])
+    {
+        constraintVerticalSpaceOfLogoFromTop.constant=20;
+        constraintVerticalSpaecOfDateDetailViewFromLogo.constant=20;
+        constraintVerticalSpaceOfSignUpButtonFromDataDetailView.constant=15;
+        constraintVeticalSpaceOfLoginButtonFromSignUpBtn.constant=15;
+    }
 
 }
 
-#pragma mark - Sign Up Action
-- (IBAction)btnCheckBoxAction:(id)sender {
-    [APPUtility showUnderDevelopmentAlert];
+
+#pragma mark - DetechTouchOnScrollViewGesture Handler
+-(void)detechTouchOnScrollViewGestureAction:(UITapGestureRecognizer *)sender
+{
+    [self resetFrame];
+    [self endEditing:YES];
 }
 
-- (IBAction)btnSignUpAction:(id)sender {
-//        [APPUtility showUnderDevelopmentAlert];
-//    return;
+
+#pragma mark -Sign Dictionary
+-(NSMutableDictionary *)dicSignUpData
+{
+    if(!dicSignUpData)
+        dicSignUpData=[[NSMutableDictionary alloc]init];
+    
+    return dicSignUpData;
+}
+#pragma mark - UpdateView Data
+-(void)UpdateViewData:(NSMutableDictionary *)dic
+{
+    dicSignUpData=dic;
+    txtFieldName.text=[APPUtility getObjectForKey:@"name" fromDict:dic];
+    txtFieldUserName.text=[APPUtility getObjectForKey:@"username" fromDict:dic];
+    txtFieldPassword.text=[APPUtility getObjectForKey:@"password" fromDict:dic];
+    txtFieldEmail.text=[APPUtility getObjectForKey:@"email" fromDict:dic];
+    txtFieldAge.text=[APPUtility getObjectForKey:@"age" fromDict:dic];
+    txtFieldDeliveryAddress.text=[APPUtility getObjectForKey:@"address" fromDict:dic];
+
+    
+
+}
+
+#pragma mark - Fill View SignUp Data
+-(BOOL)fillViewSignUpData
+{
+    BOOL isError=TRUE;
     
     if(txtFieldName.text.length!=0)
     {
-       if(txtFieldEmail.text.length!=0)
-       {
-           if([APPUtility validateEmail:txtFieldEmail.text])
-           {
-               if(txtFieldUserName.text.length!=0)
-               {
+        if(txtFieldEmail.text.length!=0)
+        {
+            if([APPUtility validateEmail:txtFieldEmail.text])
+            {
+                if(txtFieldUserName.text.length!=0)
+                {
                     if(txtFieldPassword.text.length!=0)
                     {
                         if(txtFieldDeliveryAddress.text.length!=0)
                         {
                             if(txtFieldAge.text.length!=0)
                             {
-                                /*
-                                //http://gagan.byethost11.com/trakart/webservices/index.php?service=register
-                                {
-                                    "username":"myusername",
-                                    "name":"myname",
-                                    "email":"myemail",
-                                    "address":"myaddress",
-                                    "age":25,
-                                    "password":"mypassword"
-                                }
-                                 */
-                                
-                            // For Driver
-                                /*
-                                 NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:txtFieldUserName.text,@"username",txtFieldName
-                                 .text,@"name",txtFieldEmail.text,@"email",txtFieldDeliveryAddress.text,@"address",txtFieldAge.text,@"age",txtFieldPassword.text,@"password", nil];
-                                 */
-                                
-                                 NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:txtFieldUserName.text,@"username",txtFieldName
-                                .text,@"name",txtFieldEmail.text,@"email",txtFieldDeliveryAddress.text,@"address",txtFieldAge.text,@"age",txtFieldPassword.text,@"password", nil];
-                                
-                                if([_delegate respondsToSelector:@selector(registerUser:)])
-                                {
-                                    [_delegate performSelector:@selector(registerUser:) withObject:dic];
-                                }
+                                isError=false;
                             }
                             else
                             {
-                                 [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter your age" delegate:self];
+                                [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter your age" delegate:self];
                             }
                         }
                         else
                         {
-                             [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter delivery address" delegate:self];
+                            [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter delivery address" delegate:self];
                         }
                     }
                     else
                     {
-                       [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter password" delegate:self];
+                        [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter password" delegate:self];
                     }
-               }
-               else
-               {
-                   [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter username" delegate:self];
-               }
-
-           }
-           else
-           {
-              [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter correct email" delegate:self];
-           }
+                }
+                else
+                {
+                    [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter username" delegate:self];
+                }
+                
+            }
+            else
+            {
+                [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter correct email" delegate:self];
+            }
         }
-       else
-       {
-          [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter your email" delegate:self];
-       }
+        else
+        {
+            [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter your email" delegate:self];
+        }
         
     }
     else
     {
         [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Please enter your name" delegate:self];
+    }
+    
+    
+    if(!isError)
+    {
+        [[self dicSignUpData] setObject:txtFieldUserName.text forKey:@"username"];
+        [[self dicSignUpData] setObject:txtFieldEmail.text forKey:@"email"];
+        [[self dicSignUpData] setObject:txtFieldName.text forKey:@"name"];
+        [[self dicSignUpData] setObject:txtFieldDeliveryAddress.text forKey:@"address"];
+        [[self dicSignUpData] setObject:txtFieldAge.text forKey:@"age"];
+        [[self dicSignUpData] setObject:txtFieldPassword.text forKey:@"password"];
+        
+        
+        [[self dicSignUpData] setObject:@"user"forKey:@"userType"];
+    }
+    
+    return isError;
+    
+}
+
+#pragma mark - IBAction Methods
+- (IBAction)btnSignUpAction:(id)sender {
+
+    BOOL isError=  [self fillViewSignUpData];
+    
+    if(isError)
+        return;
+    
+    
+    if([_delegate respondsToSelector:@selector(registerUser:)])
+    {
+        [_delegate performSelector:@selector(registerUser:) withObject:dicSignUpData];
     }
 }
 
@@ -143,6 +194,37 @@
     }
 }
 
+- (IBAction)btnCheckBoxAction:(id)sender {
+    
+   BOOL isError= [self fillViewSignUpData];
+    
+    if(isError)
+        return;
+    
+    if(!isDriver)
+    {
+        
+        if([_delegate respondsToSelector:@selector(registerDriver:)])
+        {
+            isDriver=TRUE;
+            [btnCheckBox setImage:[UIImage imageNamed:@"Checked_icon.png"] forState:UIControlStateNormal];
+            [_delegate performSelector:@selector(registerDriver:) withObject:dicSignUpData];
+        }
+    }
+    else
+    {
+        [self unSelectedDriverCheckbox];
+    }
+
+}
+
+#pragma mark - UnSelect Driver Checkbox
+-(void)unSelectedDriverCheckbox
+{
+    isDriver=false;
+    [btnCheckBox setImage:nil forState:UIControlStateNormal];
+    
+}
 #pragma mark - TextField Delegate Method
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {

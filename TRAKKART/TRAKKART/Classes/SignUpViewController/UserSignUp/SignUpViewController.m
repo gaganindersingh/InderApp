@@ -10,6 +10,8 @@
 #import "SignUpView.h"
 #import "WebserviceCall.h"
 #import "WebserviceManager.h"
+#import "DriverSignUpViewController.h"
+#import "MainScreenViewController.h"
 @interface SignUpViewController ()<SignUpViewDelegate>
 
 @end
@@ -29,11 +31,26 @@
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
-        [objSignUpView stopBackgroundAnimation];
+   [objSignUpView stopBackgroundAnimation];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [objSignUpView resetFrame];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Update SignUpView Data From DriverSignUpView
+-(void)updateSignUpDataValueFromDriverSignUp:(NSMutableDictionary *)dicData
+{
+    [objSignUpView UpdateViewData:dicData];
+}
+-(void)deSelectDriverCheckBox
+{
+    [objSignUpView unSelectedDriverCheckbox];
 }
 
 #pragma mark - SignUpView Delegate Method Implementation
@@ -44,6 +61,11 @@
     
 }
 
+-(void)registerDriver:(NSDictionary *)driverData
+{
+    
+    [self pushToDriverSignUpViewController:[driverData mutableCopy]];
+}
 -(void)registerUser:(NSDictionary *)userData
 {
     
@@ -70,7 +92,17 @@
             if([[data objectForKey:WebserviceResponseKey] isKindOfClass:[NSDictionary class]])
             {
                 // Response parser
-                [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Register successfully" delegate:self];
+                //[APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Register successfully" delegate:self];
+                
+                
+                UIStoryboard *storyboard = nil;
+                
+                storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                MainScreenViewController *objMainScreenViewController=[storyboard instantiateViewControllerWithIdentifier:@"MainScreenViewControllerIdentifier"];
+                AppDelegate *delegate=(AppDelegate *)KAppDelegate;
+                [delegate.window setRootViewController:objMainScreenViewController];
+                
+                [self.navigationController popToRootViewControllerAnimated:YES];
               
             }
         }
@@ -82,6 +114,27 @@
     [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"No Response" delegate:self];
 }
 
+#pragma mark - Push To ViewContoller
+-(void)pushToDriverSignUpViewController:(NSMutableDictionary  *)dicData
+{
+    
+    UIStoryboard *storyboard = nil;
+    
+    storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DriverSignUpViewController *objDriverSignUpViewController=[storyboard instantiateViewControllerWithIdentifier:@"DriverSignUpViewControllerIdenntifer"];
+    objDriverSignUpViewController.dicSignUpData=dicData;
+    [self pushToViewController:objDriverSignUpViewController];
+    
+}
+
+-(void)pushToViewController:(id)viewController
+{
+    if(!viewController)
+        return;
+    
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
+}
 
 
 
