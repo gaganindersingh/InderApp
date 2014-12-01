@@ -12,6 +12,7 @@
 #import "WebserviceCall.h"
 #import "MainScreenViewController.h"
 #import "WebserviceManager.h"
+#import <FacebookSDK/FacebookSDK.h>
 @interface LoginViewController ()<LoginViewDelegate>
 
 @end
@@ -60,7 +61,7 @@
         data = (NSDictionary *)wsResponse.webserviceResponse;
         if([[data objectForKey:WebserviceErrorKey] isEqualToNumber:[NSNumber numberWithBool:1]])
         {
-            [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:[data objectForKey:WebserviceResponseKey] delegate:self];
+            [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:[data objectForKey:WebserviceMessageKey] delegate:self];
         }
         else
         {
@@ -71,10 +72,10 @@
                 
                 storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
                 MainScreenViewController *objMainScreenViewController=[storyboard instantiateViewControllerWithIdentifier:@"MainScreenViewControllerIdentifier"];
-                AppDelegate *delegate=(AppDelegate *)KAppDelegate;
-                [delegate.window setRootViewController:objMainScreenViewController];
-                
-                [self.navigationController popToRootViewControllerAnimated:YES];
+                //AppDelegate *delegate=(AppDelegate *)KAppDelegate;
+                //[delegate.window setRootViewController:objMainScreenViewController];
+
+                [self.navigationController pushViewController:objMainScreenViewController animated:YES];
                 // Response parser
                // [APPUtility showAlert:NSLocalizedString(@"AppName", @"") withMessage:@"Login Successfully" delegate:self];
                 
@@ -106,4 +107,8 @@
     [self.navigationController pushViewController:controller animated:YES];
     
 }
+
+
+
+
 @end

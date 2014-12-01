@@ -58,28 +58,11 @@
                                 <constraint firstAttribute="width" constant="269" id="sRK-l9-to7"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-qy-Idh">
-                            <rect key="frame" x="202" y="472" width="99" height="46"/>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="46" id="hAe-iB-HfY"/>
-                                <constraint firstAttribute="width" constant="99" id="lhw-EG-Ltx"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" title="Login In"/>
-                            <connections>
-                                <action selector="btnLoginAction:" destination="-1" eventType="touchUpInside" id="A9C-pX-UeT"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="aY9-IN-mpU" firstAttribute="top" secondItem="cyi-Ig-r96" secondAttribute="top" constant="22" id="1DZ-gz-WnQ"/>
-                        <constraint firstAttribute="trailing" secondItem="fKk-qy-Idh" secondAttribute="trailing" constant="19" id="AlI-YL-To5"/>
-                        <constraint firstAttribute="centerX" secondItem="fKk-qy-Idh" secondAttribute="centerX" constant="-91.5" id="EM1-CV-GUE"/>
                         <constraint firstAttribute="centerY" secondItem="STo-mk-XYc" secondAttribute="centerY" id="FGG-oN-lGS"/>
-                        <constraint firstAttribute="bottom" secondItem="fKk-qy-Idh" secondAttribute="bottom" constant="50" id="Whl-Lv-Wh7"/>
                         <constraint firstAttribute="centerX" secondItem="aY9-IN-mpU" secondAttribute="centerX" constant="-0.5" id="Y0n-l4-MwO"/>
                         <constraint firstAttribute="centerX" secondItem="STo-mk-XYc" secondAttribute="centerX" constant="-0.5" id="yb6-cf-pVs"/>
                     </constraints>

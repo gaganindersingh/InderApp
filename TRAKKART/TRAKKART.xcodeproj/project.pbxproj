@@ -36,6 +36,7 @@
 		CE8ADD781A2B07D3006E8C36 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD651A2B07D3006E8C36 /* Username.png */; };
 		CE8ADD791A2B07D3006E8C36 /* Username@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD661A2B07D3006E8C36 /* Username@2x.png */; };
 		CE8ADD7A1A2B07D3006E8C36 /* Username@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD671A2B07D3006E8C36 /* Username@3x.png */; };
+		CE8ADD7D1A2BA3F9006E8C36 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */; };
 		CEA6AE511A2554730042B111 /* DriverSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */; };
 		CEA6AE521A2554730042B111 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4D1A2554730042B111 /* SignUpView.m */; };
 		CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6AE4E1A2554730042B111 /* SignUpView.xib */; };
@@ -128,6 +129,7 @@
 		CE8ADD651A2B07D3006E8C36 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
 		CE8ADD661A2B07D3006E8C36 /* Username@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@2x.png"; sourceTree = "<group>"; };
 		CE8ADD671A2B07D3006E8C36 /* Username@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@3x.png"; sourceTree = "<group>"; };
+		CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CEA6AE491A2554730042B111 /* DriverSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverSignUpViewController.h; sourceTree = "<group>"; };
 		CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverSignUpViewController.m; sourceTree = "<group>"; };
 		CEA6AE4C1A2554730042B111 /* SignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpView.h; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDBE59C1A20964D009DDF8A /* libsqlite3.0.dylib in Frameworks */,
+				CE8ADD7D1A2BA3F9006E8C36 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +302,15 @@
 			path = "Log In Screen";
 			sourceTree = "<group>";
 		};
+		CE8ADD7B1A2BA3E3006E8C36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */,
+			);
+			name = Frameworks;
+			path = TRAKKART/Frameworks;
+			sourceTree = "<group>";
+		};
 		CEA6AE481A2554730042B111 /* DriverSignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +338,7 @@
 		CEDBE3CC1A2055CA009DDF8A = {
 			isa = PBXGroup;
 			children = (
+				CE8ADD7B1A2BA3E3006E8C36 /* Frameworks */,
 				CEDBE59B1A20964D009DDF8A /* libsqlite3.0.dylib */,
 				CEDBE3D71A2055CA009DDF8A /* TRAKKART */,
 				CEDBE3F11A2055CA009DDF8A /* TRAKKARTTests */,
@@ -940,6 +953,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAKKART/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "TRAKKART/TRAKKAR-APP.pch";
 				INFOPLIST_FILE = TRAKKART/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -951,6 +968,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAKKART/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "TRAKKART/TRAKKAR-APP.pch";
 				INFOPLIST_FILE = TRAKKART/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

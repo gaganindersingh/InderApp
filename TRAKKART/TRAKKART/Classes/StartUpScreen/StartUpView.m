@@ -44,23 +44,24 @@
 
 #pragma mark - Animation Methods
 - (IBAction)btnFacebookAction:(id)sender {
-    [APPUtility showUnderDevelopmentAlert];
+    
+    if([_delegate respondsToSelector:@selector(LoginWithFacebookMethod)])
+    {
+        [_delegate performSelector:@selector(LoginWithFacebookMethod) withObject:nil];
+    }
 }
 
 - (IBAction)btnEmailLoginAction:(id)sender {
-    [APPUtility showUnderDevelopmentAlert];
-}
-
-- (IBAction)btnLoginAction:(id)sender {
-    
-   
     
     if([_delegate respondsToSelector:@selector(moveToLoginScreen)])
     {
         [_delegate performSelector:@selector(moveToLoginScreen) withObject:nil];
     }
+}
+
+- (IBAction)btnLoginAction:(id)sender {
     
-    
+   
 }
 
 -(void)startBackgroundAnimation
@@ -72,5 +73,9 @@
 {
     [objMovingImages invalidateTimer];
 }
+
+
+
+
 
 @end

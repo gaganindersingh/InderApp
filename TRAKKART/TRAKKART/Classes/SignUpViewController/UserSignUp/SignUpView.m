@@ -90,9 +90,7 @@
     txtFieldEmail.text=[APPUtility getObjectForKey:@"email" fromDict:dic];
     txtFieldAge.text=[APPUtility getObjectForKey:@"age" fromDict:dic];
     txtFieldDeliveryAddress.text=[APPUtility getObjectForKey:@"address" fromDict:dic];
-
     
-
 }
 
 #pragma mark - Fill View SignUp Data
@@ -280,8 +278,6 @@
     [self resetFrame];
     [self resignKeyboard];
 }
-
-
 
 #pragma mark - Animation Methods
 -(void)startBackgroundAnimation
