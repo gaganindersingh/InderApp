@@ -122,21 +122,14 @@
                         <viewControllerLayoutGuide type="top" id="XFI-kl-wdV"/>
                         <viewControllerLayoutGuide type="bottom" id="usx-Y2-GfG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Edu-h7-oCc">
+                    <view key="view" contentMode="scaleToFill" id="Edu-h7-oCc" customClass="MainScreenView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Feature is under development" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyH-rh-ouz">
-                                <rect key="frame" x="0.0" y="118" width="320" height="103"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="objMainScreenView" destination="Edu-h7-oCc" id="td0-nB-d47"/>
                         <outlet property="view" destination="Edu-h7-oCc" id="bEB-pg-UcQ"/>
                     </connections>
                 </viewController>

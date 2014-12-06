@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
-
+@class MainScreenView;
 @interface MainScreenViewController : BaseViewController
-
+{
+    
+    IBOutlet MainScreenView *objMainScreenView;
+}
 @end

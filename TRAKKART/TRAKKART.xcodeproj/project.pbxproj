@@ -10,6 +10,9 @@
 		CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA61A24FAF900ED386F /* StartUpViewController.m */; };
 		CE464FAA1A24FB5900ED386F /* StartUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA91A24FB5900ED386F /* StartUpView.m */; };
 		CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE464FAB1A24FB8A00ED386F /* StartUpView.xib */; };
+		CE5317741A32F14400D4C213 /* MainScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5317731A32F14400D4C213 /* MainScreenView.m */; };
+		CE5317761A32F18F00D4C213 /* MainScreenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5317751A32F18F00D4C213 /* MainScreenView.xib */; };
+		CE58DD2D1A2F7704003ED751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE58DD2C1A2F7704003ED751 /* UIKit.framework */; };
 		CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8ADD401A2A23F7006E8C36 /* SignUp.m */; };
 		CE8ADD461A2ACC45006E8C36 /* arrow_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD431A2ACC45006E8C36 /* arrow_icon.png */; };
 		CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD441A2ACC45006E8C36 /* arrow_icon@2x.png */; };
@@ -26,16 +29,10 @@
 		CE8ADD6D1A2B07D3006E8C36 /* ForgotPassword@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */; };
 		CE8ADD6F1A2B07D3006E8C36 /* LogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */; };
 		CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */; };
-		CE8ADD711A2B07D3006E8C36 /* Login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */; };
+		CE8ADD711A2B07D3006E8C36 /* LogIn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5E1A2B07D3006E8C36 /* LogIn@3x.png */; };
 		CE8ADD721A2B07D3006E8C36 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD5F1A2B07D3006E8C36 /* Logo.png */; };
 		CE8ADD731A2B07D3006E8C36 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */; };
 		CE8ADD741A2B07D3006E8C36 /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */; };
-		CE8ADD751A2B07D3006E8C36 /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD621A2B07D3006E8C36 /* Password.png */; };
-		CE8ADD761A2B07D3006E8C36 /* Password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD631A2B07D3006E8C36 /* Password@2x.png */; };
-		CE8ADD771A2B07D3006E8C36 /* Password@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD641A2B07D3006E8C36 /* Password@3x.png */; };
-		CE8ADD781A2B07D3006E8C36 /* Username.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD651A2B07D3006E8C36 /* Username.png */; };
-		CE8ADD791A2B07D3006E8C36 /* Username@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD661A2B07D3006E8C36 /* Username@2x.png */; };
-		CE8ADD7A1A2B07D3006E8C36 /* Username@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE8ADD671A2B07D3006E8C36 /* Username@3x.png */; };
 		CE8ADD7D1A2BA3F9006E8C36 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */; };
 		CEA6AE511A2554730042B111 /* DriverSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */; };
 		CEA6AE521A2554730042B111 /* SignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE4D1A2554730042B111 /* SignUpView.m */; };
@@ -43,6 +40,17 @@
 		CEA6AE541A2554730042B111 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE501A2554730042B111 /* SignUpViewController.m */; };
 		CEA6AE571A2554960042B111 /* DriverSignUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA6AE561A2554960042B111 /* DriverSignUpView.m */; };
 		CEA6AE591A2555610042B111 /* DriverSignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA6AE581A2555610042B111 /* DriverSignUpView.xib */; };
+		CEC319C11A2E345D003445DF /* Email.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319BB1A2E345D003445DF /* Email.png */; };
+		CEC319C21A2E345D003445DF /* Email@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319BC1A2E345D003445DF /* Email@2x.png */; };
+		CEC319C31A2E345D003445DF /* Email@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319BD1A2E345D003445DF /* Email@3x.png */; };
+		CEC319C41A2E345D003445DF /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319BE1A2E345D003445DF /* Facebook.png */; };
+		CEC319C51A2E345D003445DF /* Facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319BF1A2E345D003445DF /* Facebook@2x.png */; };
+		CEC319C61A2E345D003445DF /* Facebook@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319C01A2E345D003445DF /* Facebook@3x.png */; };
+		CEC319CA1A2E4EA6003445DF /* BebasNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEC319C91A2E4EA6003445DF /* BebasNeue.ttf */; };
+		CEC319CF1A2EA566003445DF /* Login_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319CC1A2EA566003445DF /* Login_icon.png */; };
+		CEC319D01A2EA566003445DF /* Login_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319CD1A2EA566003445DF /* Login_icon@2x.png */; };
+		CEC319D11A2EA566003445DF /* Login_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC319CE1A2EA566003445DF /* Login_icon@3x.png */; };
+		CED62F101A2F7CBE00CD6A36 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED62F0F1A2F7CBE00CD6A36 /* Images-2.xcassets */; };
 		CEDBE3DB1A2055CA009DDF8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBE3DA1A2055CA009DDF8A /* main.m */; };
 		CEDBE3DE1A2055CA009DDF8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBE3DD1A2055CA009DDF8A /* AppDelegate.m */; };
 		CEDBE3E41A2055CA009DDF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDBE3E21A2055CA009DDF8A /* Main.storyboard */; };
@@ -101,6 +109,10 @@
 		CE464FA81A24FB5900ED386F /* StartUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpView.h; sourceTree = "<group>"; };
 		CE464FA91A24FB5900ED386F /* StartUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpView.m; sourceTree = "<group>"; };
 		CE464FAB1A24FB8A00ED386F /* StartUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartUpView.xib; sourceTree = "<group>"; };
+		CE5317721A32F14400D4C213 /* MainScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenView.h; sourceTree = "<group>"; };
+		CE5317731A32F14400D4C213 /* MainScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenView.m; sourceTree = "<group>"; };
+		CE5317751A32F18F00D4C213 /* MainScreenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenView.xib; sourceTree = "<group>"; };
+		CE58DD2C1A2F7704003ED751 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE8ADD3F1A2A23F7006E8C36 /* SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUp.h; sourceTree = "<group>"; };
 		CE8ADD401A2A23F7006E8C36 /* SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUp.m; sourceTree = "<group>"; };
 		CE8ADD431A2ACC45006E8C36 /* arrow_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon.png; sourceTree = "<group>"; };
@@ -119,16 +131,10 @@
 		CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ForgotPassword@3x.png"; sourceTree = "<group>"; };
 		CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogIn.png; sourceTree = "<group>"; };
 		CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogIn@2x.png"; sourceTree = "<group>"; };
-		CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login@3x.png"; sourceTree = "<group>"; };
+		CE8ADD5E1A2B07D3006E8C36 /* LogIn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogIn@3x.png"; sourceTree = "<group>"; };
 		CE8ADD5F1A2B07D3006E8C36 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@2x.png"; sourceTree = "<group>"; };
 		CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo@3x.png"; sourceTree = "<group>"; };
-		CE8ADD621A2B07D3006E8C36 /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Password.png; sourceTree = "<group>"; };
-		CE8ADD631A2B07D3006E8C36 /* Password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Password@2x.png"; sourceTree = "<group>"; };
-		CE8ADD641A2B07D3006E8C36 /* Password@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Password@3x.png"; sourceTree = "<group>"; };
-		CE8ADD651A2B07D3006E8C36 /* Username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Username.png; sourceTree = "<group>"; };
-		CE8ADD661A2B07D3006E8C36 /* Username@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@2x.png"; sourceTree = "<group>"; };
-		CE8ADD671A2B07D3006E8C36 /* Username@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Username@3x.png"; sourceTree = "<group>"; };
 		CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CEA6AE491A2554730042B111 /* DriverSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverSignUpViewController.h; sourceTree = "<group>"; };
 		CEA6AE4A1A2554730042B111 /* DriverSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverSignUpViewController.m; sourceTree = "<group>"; };
@@ -140,6 +146,18 @@
 		CEA6AE551A2554960042B111 /* DriverSignUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverSignUpView.h; sourceTree = "<group>"; };
 		CEA6AE561A2554960042B111 /* DriverSignUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverSignUpView.m; sourceTree = "<group>"; };
 		CEA6AE581A2555610042B111 /* DriverSignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DriverSignUpView.xib; sourceTree = "<group>"; };
+		CEC319BB1A2E345D003445DF /* Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Email.png; sourceTree = "<group>"; };
+		CEC319BC1A2E345D003445DF /* Email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email@2x.png"; sourceTree = "<group>"; };
+		CEC319BD1A2E345D003445DF /* Email@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Email@3x.png"; sourceTree = "<group>"; };
+		CEC319BE1A2E345D003445DF /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		CEC319BF1A2E345D003445DF /* Facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook@2x.png"; sourceTree = "<group>"; };
+		CEC319C01A2E345D003445DF /* Facebook@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook@3x.png"; sourceTree = "<group>"; };
+		CEC319C91A2E4EA6003445DF /* BebasNeue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.ttf; sourceTree = "<group>"; };
+		CEC319CB1A2EA3A8003445DF /* SteelTongs.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SteelTongs.ttf; sourceTree = "<group>"; };
+		CEC319CC1A2EA566003445DF /* Login_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_icon.png; sourceTree = "<group>"; };
+		CEC319CD1A2EA566003445DF /* Login_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_icon@2x.png"; sourceTree = "<group>"; };
+		CEC319CE1A2EA566003445DF /* Login_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login_icon@3x.png"; sourceTree = "<group>"; };
+		CED62F0F1A2F7CBE00CD6A36 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		CEDBE3D51A2055CA009DDF8A /* TRAKKART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRAKKART.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDBE3D91A2055CA009DDF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDBE3DA1A2055CA009DDF8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -215,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE58DD2D1A2F7704003ED751 /* UIKit.framework in Frameworks */,
 				CEDBE59C1A20964D009DDF8A /* libsqlite3.0.dylib in Frameworks */,
 				CE8ADD7D1A2BA3F9006E8C36 /* FacebookSDK.framework in Frameworks */,
 			);
@@ -276,6 +295,9 @@
 			children = (
 				CE8ADD511A2B0010006E8C36 /* MainScreenViewController.h */,
 				CE8ADD521A2B0010006E8C36 /* MainScreenViewController.m */,
+				CE5317721A32F14400D4C213 /* MainScreenView.h */,
+				CE5317731A32F14400D4C213 /* MainScreenView.m */,
+				CE5317751A32F18F00D4C213 /* MainScreenView.xib */,
 			);
 			path = DashboardViewController;
 			sourceTree = "<group>";
@@ -283,21 +305,24 @@
 		CE8ADD541A2B07D3006E8C36 /* Log In Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CEC319BB1A2E345D003445DF /* Email.png */,
+				CEC319BC1A2E345D003445DF /* Email@2x.png */,
+				CEC319BD1A2E345D003445DF /* Email@3x.png */,
+				CEC319BE1A2E345D003445DF /* Facebook.png */,
+				CEC319BF1A2E345D003445DF /* Facebook@2x.png */,
+				CEC319C01A2E345D003445DF /* Facebook@3x.png */,
 				CE8ADD581A2B07D3006E8C36 /* ForgotPassword.png */,
+				CEC319CC1A2EA566003445DF /* Login_icon.png */,
+				CEC319CD1A2EA566003445DF /* Login_icon@2x.png */,
+				CEC319CE1A2EA566003445DF /* Login_icon@3x.png */,
 				CE8ADD591A2B07D3006E8C36 /* ForgotPassword@2x.png */,
 				CE8ADD5A1A2B07D3006E8C36 /* ForgotPassword@3x.png */,
 				CE8ADD5C1A2B07D3006E8C36 /* LogIn.png */,
 				CE8ADD5D1A2B07D3006E8C36 /* LogIn@2x.png */,
-				CE8ADD5E1A2B07D3006E8C36 /* Login@3x.png */,
+				CE8ADD5E1A2B07D3006E8C36 /* LogIn@3x.png */,
 				CE8ADD5F1A2B07D3006E8C36 /* Logo.png */,
 				CE8ADD601A2B07D3006E8C36 /* Logo@2x.png */,
 				CE8ADD611A2B07D3006E8C36 /* Logo@3x.png */,
-				CE8ADD621A2B07D3006E8C36 /* Password.png */,
-				CE8ADD631A2B07D3006E8C36 /* Password@2x.png */,
-				CE8ADD641A2B07D3006E8C36 /* Password@3x.png */,
-				CE8ADD651A2B07D3006E8C36 /* Username.png */,
-				CE8ADD661A2B07D3006E8C36 /* Username@2x.png */,
-				CE8ADD671A2B07D3006E8C36 /* Username@3x.png */,
 			);
 			path = "Log In Screen";
 			sourceTree = "<group>";
@@ -305,6 +330,7 @@
 		CE8ADD7B1A2BA3E3006E8C36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE58DD2C1A2F7704003ED751 /* UIKit.framework */,
 				CE8ADD7C1A2BA3F9006E8C36 /* FacebookSDK.framework */,
 			);
 			name = Frameworks;
@@ -333,6 +359,15 @@
 				CEA6AE501A2554730042B111 /* SignUpViewController.m */,
 			);
 			path = UserSignUp;
+			sourceTree = "<group>";
+		};
+		CEC319C81A2E4EA6003445DF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CEC319CB1A2EA3A8003445DF /* SteelTongs.ttf */,
+				CEC319C91A2E4EA6003445DF /* BebasNeue.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		CEDBE3CC1A2055CA009DDF8A = {
@@ -369,6 +404,7 @@
 				CEDBE5A61A209927009DDF8A /* Manager */,
 				CEDBE3E71A2055CA009DDF8A /* LaunchScreen.xib */,
 				CEDBE3E51A2055CA009DDF8A /* Images.xcassets */,
+				CED62F0F1A2F7CBE00CD6A36 /* Images-2.xcassets */,
 				CEDBE3D81A2055CA009DDF8A /* Supporting Files */,
 			);
 			path = TRAKKART;
@@ -404,11 +440,11 @@
 		CEDBE4921A2055E9009DDF8A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE8ADD501A2AFFBE006E8C36 /* DashboardViewController */,
-				CE464FA41A24FAD000ED386F /* StartUpScreen */,
 				CEDBE4931A2055E9009DDF8A /* BaseViewContoller */,
+				CE464FA41A24FAD000ED386F /* StartUpScreen */,
 				CEDBE4991A2055E9009DDF8A /* LoginViewController */,
 				CEDBE49F1A2055E9009DDF8A /* SignUpViewController */,
+				CE8ADD501A2AFFBE006E8C36 /* DashboardViewController */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -517,6 +553,7 @@
 		CEDBE5C21A209969009DDF8A /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				CEC319C81A2E4EA6003445DF /* Font */,
 				CEDBE5C31A209969009DDF8A /* APPUtilitiy */,
 				CEDBE5C61A209969009DDF8A /* CMLibrary */,
 				CEDBE5E71A209969009DDF8A /* Constant */,
@@ -714,6 +751,7 @@
 					};
 					CEDBE3ED1A2055CA009DDF8A = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = AFKALWY3ZK;
 						TestTargetID = CEDBE3D41A2055CA009DDF8A;
 					};
 				};
@@ -746,34 +784,39 @@
 				CE8ADD741A2B07D3006E8C36 /* Logo@3x.png in Resources */,
 				CE8ADD731A2B07D3006E8C36 /* Logo@2x.png in Resources */,
 				CEDBE55A1A2071B7009DDF8A /* image3.jpg in Resources */,
-				CE8ADD771A2B07D3006E8C36 /* Password@3x.png in Resources */,
+				CEC319CA1A2E4EA6003445DF /* BebasNeue.ttf in Resources */,
 				CEDBE55C1A2071B7009DDF8A /* image5.jpg in Resources */,
 				CEA6AE591A2555610042B111 /* DriverSignUpView.xib in Resources */,
 				CE8ADD4D1A2AE8C6006E8C36 /* Checked_icon.png in Resources */,
 				CE8ADD6A1A2B07D3006E8C36 /* Background@3x.png in Resources */,
 				CE8ADD681A2B07D3006E8C36 /* Background.png in Resources */,
 				CE8ADD6B1A2B07D3006E8C36 /* ForgotPassword.png in Resources */,
+				CEC319C51A2E345D003445DF /* Facebook@2x.png in Resources */,
 				CE8ADD461A2ACC45006E8C36 /* arrow_icon.png in Resources */,
-				CE8ADD761A2B07D3006E8C36 /* Password@2x.png in Resources */,
-				CE8ADD711A2B07D3006E8C36 /* Login@3x.png in Resources */,
+				CEC319D01A2EA566003445DF /* Login_icon@2x.png in Resources */,
+				CE8ADD711A2B07D3006E8C36 /* LogIn@3x.png in Resources */,
+				CEC319C11A2E345D003445DF /* Email.png in Resources */,
+				CEC319CF1A2EA566003445DF /* Login_icon.png in Resources */,
 				CE8ADD6D1A2B07D3006E8C36 /* ForgotPassword@3x.png in Resources */,
+				CED62F101A2F7CBE00CD6A36 /* Images-2.xcassets in Resources */,
 				CEDBE53A1A2055EA009DDF8A /* LoginView.xib in Resources */,
 				CEDBE54E1A206331009DDF8A /* Logo4.png in Resources */,
 				CEDBE5FC1A209969009DDF8A /* Cache.sqlite in Resources */,
 				CE8ADD6C1A2B07D3006E8C36 /* ForgotPassword@2x.png in Resources */,
-				CE8ADD751A2B07D3006E8C36 /* Password.png in Resources */,
+				CEC319C31A2E345D003445DF /* Email@3x.png in Resources */,
+				CEC319C41A2E345D003445DF /* Facebook.png in Resources */,
 				CEDBE54F1A206331009DDF8A /* Logo5.png in Resources */,
 				CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */,
-				CE8ADD7A1A2B07D3006E8C36 /* Username@3x.png in Resources */,
+				CEC319D11A2EA566003445DF /* Login_icon@3x.png in Resources */,
 				CEDBE55B1A2071B7009DDF8A /* image4.jpg in Resources */,
 				CE8ADD4E1A2AE8C6006E8C36 /* Checked_icon@2x.png in Resources */,
 				CEDBE3E41A2055CA009DDF8A /* Main.storyboard in Resources */,
 				CE8ADD691A2B07D3006E8C36 /* Background@2x.png in Resources */,
-				CE8ADD781A2B07D3006E8C36 /* Username.png in Resources */,
 				CEDBE5371A2055EA009DDF8A /* BaseView.xib in Resources */,
+				CEC319C21A2E345D003445DF /* Email@2x.png in Resources */,
+				CEC319C61A2E345D003445DF /* Facebook@3x.png in Resources */,
 				CEDBE5581A2071B7009DDF8A /* image1.jpg in Resources */,
 				CEDBE5501A206331009DDF8A /* Logo6.png in Resources */,
-				CE8ADD791A2B07D3006E8C36 /* Username@2x.png in Resources */,
 				CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */,
 				CE8ADD481A2ACC45006E8C36 /* arrow_icon@3x.png in Resources */,
 				CE8ADD6F1A2B07D3006E8C36 /* LogIn.png in Resources */,
@@ -785,6 +828,7 @@
 				CEDBE5591A2071B7009DDF8A /* image2.jpg in Resources */,
 				CEDBE5491A205847009DDF8A /* MovingImageCollectionViewCell.xib in Resources */,
 				CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */,
+				CE5317761A32F18F00D4C213 /* MainScreenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +853,7 @@
 				CEDBE6051A209969009DDF8A /* WebserviceResponseParser.m in Sources */,
 				CEDBE5381A2055EA009DDF8A /* BaseViewController.m in Sources */,
 				CEDBE3DE1A2055CA009DDF8A /* AppDelegate.m in Sources */,
+				CE5317741A32F14400D4C213 /* MainScreenView.m in Sources */,
 				CEDBE5FE1A209969009DDF8A /* Loader.m in Sources */,
 				CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */,
 				CE8ADD531A2B0010006E8C36 /* MainScreenViewController.m in Sources */,
@@ -890,7 +935,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -910,6 +956,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e7002ca1-cfc2-472f-879e-62e39f75fc03";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -931,7 +978,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -944,6 +992,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e7002ca1-cfc2-472f-879e-62e39f75fc03";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -952,30 +1001,35 @@
 		CEDBE3F91A2055CA009DDF8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TRAKKART/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "TRAKKART/TRAKKAR-APP.pch";
 				INFOPLIST_FILE = TRAKKART/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e7002ca1-cfc2-472f-879e-62e39f75fc03";
 			};
 			name = Debug;
 		};
 		CEDBE3FA1A2055CA009DDF8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gurmit Singh (PBVD85T8RX)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TRAKKART/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "TRAKKART/TRAKKAR-APP.pch";
 				INFOPLIST_FILE = TRAKKART/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e7002ca1-cfc2-472f-879e-62e39f75fc03";
 			};
 			name = Release;
 		};
@@ -983,6 +1037,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -994,6 +1050,7 @@
 				INFOPLIST_FILE = TRAKKARTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRAKKART.app/TRAKKART";
 			};
 			name = Debug;
@@ -1002,6 +1059,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1009,6 +1068,7 @@
 				INFOPLIST_FILE = TRAKKARTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRAKKART.app/TRAKKART";
 			};
 			name = Release;
