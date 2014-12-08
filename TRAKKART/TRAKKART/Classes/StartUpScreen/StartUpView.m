@@ -59,6 +59,11 @@
     }
 }
 
+- (IBAction)btnFeedViewAction:(id)sender {
+    if ([_delegate respondsToSelector:@selector(moveToFeedView)])
+        [_delegate moveToFeedView];
+}
+
 - (IBAction)btnLoginAction:(id)sender {
     
    

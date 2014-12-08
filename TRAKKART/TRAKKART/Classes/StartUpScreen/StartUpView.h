@@ -13,6 +13,7 @@
 @optional
 -(void)moveToLoginScreen;
 -(void)LoginWithFacebookMethod;
+- (void)moveToFeedView;
 @end
 @interface StartUpView : UIView
 {

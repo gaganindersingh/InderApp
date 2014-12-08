@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C32FBD1A35721B0094493D /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FBB1A35721B0094493D /* FeedCell.m */; };
+		84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C32FBC1A35721B0094493D /* FeedCell.xib */; };
+		84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2AE1A34325A00109E1D /* FeedViewController.m */; };
+		84E8A2B41A34332200109E1D /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A2B31A34332200109E1D /* FeedView.xib */; };
+		84E8A2B71A34333900109E1D /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2B61A34333900109E1D /* FeedView.m */; };
 		CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA61A24FAF900ED386F /* StartUpViewController.m */; };
 		CE464FAA1A24FB5900ED386F /* StartUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA91A24FB5900ED386F /* StartUpView.m */; };
 		CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE464FAB1A24FB8A00ED386F /* StartUpView.xib */; };
@@ -104,6 +109,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84C32FBA1A35721B0094493D /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell.h; path = FeedViewController/FeedCell/FeedCell.h; sourceTree = "<group>"; };
+		84C32FBB1A35721B0094493D /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell.m; path = FeedViewController/FeedCell/FeedCell.m; sourceTree = "<group>"; };
+		84C32FBC1A35721B0094493D /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCell.xib; path = FeedViewController/FeedCell/FeedCell.xib; sourceTree = "<group>"; };
+		84E8A2AD1A34325A00109E1D /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedViewController.h; path = FeedViewController/FeedViewController.h; sourceTree = "<group>"; };
+		84E8A2AE1A34325A00109E1D /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedViewController.m; path = FeedViewController/FeedViewController.m; sourceTree = "<group>"; };
+		84E8A2B31A34332200109E1D /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = FeedViewController/FeedView.xib; sourceTree = "<group>"; };
+		84E8A2B51A34333900109E1D /* FeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedView.h; path = FeedViewController/FeedView.h; sourceTree = "<group>"; };
+		84E8A2B61A34333900109E1D /* FeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedView.m; path = FeedViewController/FeedView.m; sourceTree = "<group>"; };
 		CE464FA51A24FAF900ED386F /* StartUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpViewController.h; sourceTree = "<group>"; };
 		CE464FA61A24FAF900ED386F /* StartUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpViewController.m; sourceTree = "<group>"; };
 		CE464FA81A24FB5900ED386F /* StartUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpView.h; sourceTree = "<group>"; };
@@ -249,6 +262,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C32FB81A3571D60094493D /* FeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				84C32FBA1A35721B0094493D /* FeedCell.h */,
+				84C32FBB1A35721B0094493D /* FeedCell.m */,
+				84C32FBC1A35721B0094493D /* FeedCell.xib */,
+			);
+			name = FeedCell;
+			sourceTree = "<group>";
+		};
+		84C32FBF1A35AD610094493D /* BadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BadgeButton;
+			sourceTree = "<group>";
+		};
+		84E8A2A71A34313700109E1D /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84C32FBF1A35AD610094493D /* BadgeButton */,
+				84C32FB81A3571D60094493D /* FeedCell */,
+				84E8A2AD1A34325A00109E1D /* FeedViewController.h */,
+				84E8A2AE1A34325A00109E1D /* FeedViewController.m */,
+				84E8A2B51A34333900109E1D /* FeedView.h */,
+				84E8A2B61A34333900109E1D /* FeedView.m */,
+				84E8A2B31A34332200109E1D /* FeedView.xib */,
+			);
+			name = FeedViewController;
+			sourceTree = "<group>";
+		};
 		CE464FA41A24FAD000ED386F /* StartUpScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +484,7 @@
 		CEDBE4921A2055E9009DDF8A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84E8A2A71A34313700109E1D /* FeedViewController */,
 				CEDBE4931A2055E9009DDF8A /* BaseViewContoller */,
 				CE464FA41A24FAD000ED386F /* StartUpScreen */,
 				CEDBE4991A2055E9009DDF8A /* LoginViewController */,
@@ -804,6 +849,7 @@
 				CEDBE5FC1A209969009DDF8A /* Cache.sqlite in Resources */,
 				CE8ADD6C1A2B07D3006E8C36 /* ForgotPassword@2x.png in Resources */,
 				CEC319C31A2E345D003445DF /* Email@3x.png in Resources */,
+				84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */,
 				CEC319C41A2E345D003445DF /* Facebook.png in Resources */,
 				CEDBE54F1A206331009DDF8A /* Logo5.png in Resources */,
 				CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */,
@@ -820,6 +866,7 @@
 				CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */,
 				CE8ADD481A2ACC45006E8C36 /* arrow_icon@3x.png in Resources */,
 				CE8ADD6F1A2B07D3006E8C36 /* LogIn.png in Resources */,
+				84E8A2B41A34332200109E1D /* FeedView.xib in Resources */,
 				CEDBE54A1A205847009DDF8A /* MovingImages.xib in Resources */,
 				CEDBE3E91A2055CA009DDF8A /* LaunchScreen.xib in Resources */,
 				CE8ADD721A2B07D3006E8C36 /* Logo.png in Resources */,
@@ -848,6 +895,7 @@
 			files = (
 				CEDBE6031A209969009DDF8A /* WebserviceManager.m in Sources */,
 				CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */,
+				84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */,
 				CEDBE5391A2055EA009DDF8A /* LoginView.m in Sources */,
 				CEDBE6001A209969009DDF8A /* NSIProgressView.m in Sources */,
 				CEDBE6051A209969009DDF8A /* WebserviceResponseParser.m in Sources */,
@@ -860,6 +908,7 @@
 				CEDBE6021A209969009DDF8A /* WebserviceCall.m in Sources */,
 				CEDBE5471A205847009DDF8A /* MovingImageCollectionViewCell.m in Sources */,
 				CEA6AE521A2554730042B111 /* SignUpView.m in Sources */,
+				84C32FBD1A35721B0094493D /* FeedCell.m in Sources */,
 				CEDBE6061A209969009DDF8A /* XMLDictionary.m in Sources */,
 				CEDBE53B1A2055EA009DDF8A /* LoginViewController.m in Sources */,
 				CEDBE5FD1A209969009DDF8A /* CacheManager.m in Sources */,
@@ -872,6 +921,7 @@
 				CEDBE6041A209969009DDF8A /* WebserviceResponse.m in Sources */,
 				CEA6AE511A2554730042B111 /* DriverSignUpViewController.m in Sources */,
 				CEA6AE571A2554960042B111 /* DriverSignUpView.m in Sources */,
+				84E8A2B71A34333900109E1D /* FeedView.m in Sources */,
 				CEDBE6011A209969009DDF8A /* Reachability.m in Sources */,
 				CEDBE5FB1A209969009DDF8A /* CacheModel.m in Sources */,
 				CEDBE5361A2055EA009DDF8A /* BaseView.m in Sources */,

@@ -63,6 +63,19 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 
+- (void)moveToFeedView {
+    UIStoryboard *storyboard = nil;
+    
+    storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    id controller=[storyboard instantiateViewControllerWithIdentifier:@"FeedViewControllerIdentifier"];
+    
+    if(!controller)
+        return;
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 -(void)LoginWithFacebookMethod
 {
     if(!objLoader)
