@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84C32FBD1A35721B0094493D /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FBB1A35721B0094493D /* FeedCell.m */; };
 		84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C32FBC1A35721B0094493D /* FeedCell.xib */; };
+		84C32FC21A35C8780094493D /* BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FC11A35C8780094493D /* BadgeView.m */; };
 		84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2AE1A34325A00109E1D /* FeedViewController.m */; };
 		84E8A2B41A34332200109E1D /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A2B31A34332200109E1D /* FeedView.xib */; };
 		84E8A2B71A34333900109E1D /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2B61A34333900109E1D /* FeedView.m */; };
@@ -112,6 +113,8 @@
 		84C32FBA1A35721B0094493D /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell.h; path = FeedViewController/FeedCell/FeedCell.h; sourceTree = "<group>"; };
 		84C32FBB1A35721B0094493D /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell.m; path = FeedViewController/FeedCell/FeedCell.m; sourceTree = "<group>"; };
 		84C32FBC1A35721B0094493D /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCell.xib; path = FeedViewController/FeedCell/FeedCell.xib; sourceTree = "<group>"; };
+		84C32FC01A35C8780094493D /* BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BadgeView.h; path = FeedViewController/BadgeView/BadgeView.h; sourceTree = "<group>"; };
+		84C32FC11A35C8780094493D /* BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BadgeView.m; path = FeedViewController/BadgeView/BadgeView.m; sourceTree = "<group>"; };
 		84E8A2AD1A34325A00109E1D /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedViewController.h; path = FeedViewController/FeedViewController.h; sourceTree = "<group>"; };
 		84E8A2AE1A34325A00109E1D /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedViewController.m; path = FeedViewController/FeedViewController.m; sourceTree = "<group>"; };
 		84E8A2B31A34332200109E1D /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = FeedViewController/FeedView.xib; sourceTree = "<group>"; };
@@ -272,17 +275,19 @@
 			name = FeedCell;
 			sourceTree = "<group>";
 		};
-		84C32FBF1A35AD610094493D /* BadgeButton */ = {
+		84C32FBF1A35AD610094493D /* BadgeView */ = {
 			isa = PBXGroup;
 			children = (
+				84C32FC01A35C8780094493D /* BadgeView.h */,
+				84C32FC11A35C8780094493D /* BadgeView.m */,
 			);
-			name = BadgeButton;
+			name = BadgeView;
 			sourceTree = "<group>";
 		};
 		84E8A2A71A34313700109E1D /* FeedViewController */ = {
 			isa = PBXGroup;
 			children = (
-				84C32FBF1A35AD610094493D /* BadgeButton */,
+				84C32FBF1A35AD610094493D /* BadgeView */,
 				84C32FB81A3571D60094493D /* FeedCell */,
 				84E8A2AD1A34325A00109E1D /* FeedViewController.h */,
 				84E8A2AE1A34325A00109E1D /* FeedViewController.m */,
@@ -916,6 +921,7 @@
 				CEDBE3DB1A2055CA009DDF8A /* main.m in Sources */,
 				CEDBE5FA1A209969009DDF8A /* APPUtility.m in Sources */,
 				CE464FAA1A24FB5900ED386F /* StartUpView.m in Sources */,
+				84C32FC21A35C8780094493D /* BadgeView.m in Sources */,
 				CEDBE5481A205847009DDF8A /* MovingImages.m in Sources */,
 				CEDBE60B1A20997B009DDF8A /* UserInfoModel.m in Sources */,
 				CEDBE6041A209969009DDF8A /* WebserviceResponse.m in Sources */,
