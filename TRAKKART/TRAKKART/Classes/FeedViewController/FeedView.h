@@ -10,6 +10,7 @@
 
 @interface FeedView : UIView {
     
+    __weak IBOutlet UIScrollView *scrollViewHeader;
     __weak IBOutlet UICollectionView *collectionViewFeeds;
 }
 

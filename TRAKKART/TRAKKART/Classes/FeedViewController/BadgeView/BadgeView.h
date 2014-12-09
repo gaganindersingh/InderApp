@@ -10,4 +10,9 @@
 
 @interface BadgeView : UIView
 
+- (id)initWithFrame:(CGRect)frame
+              title:(NSString *)title
+         badgeValue:(NSInteger)badgeValue;
+- (void)setSelected:(BOOL)selected;
+
 @end

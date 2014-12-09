@@ -18,8 +18,10 @@
     // Initialization code
 }
 
-- (void)fillFeedCellValuesForIndex:(NSInteger)indexValue {
+- (void)fillFeedCellValuesForIndex:(NSInteger)indexValue
+                         withTitle:(NSString *)title {
     
+    [lblTitleForCell setText:title];
 }
 
 #pragma mark - UITableView Delegate & DataSource
@@ -37,5 +39,26 @@
     [cell.textLabel setText:[NSString stringWithFormat:@"Index row : %ld", indexPath.row]];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
+//}
+//
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return YES;
+//}
+//
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+//        
+//    }
+//    else {
+//        
+//    }
+//}
 
 @end

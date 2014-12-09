@@ -18,4 +18,64 @@
 }
 */
 
+- (id)initWithFrame:(CGRect)frame
+              title:(NSString *)title
+         badgeValue:(NSInteger)value {
+    
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        [self setBackgroundColor:[UIColor whiteColor]];
+        
+        CGSize sizeText = [APPUtility getSizeOfText:title
+                                           forWidth:frame.size.width
+                                           withFont:[UIFont systemFontOfSize:16]];
+        
+        CGRect frameLabel = CGRectMake((frame.size.width - sizeText.width) / 2,
+                                       (frame.size.height - sizeText.height) / 2,
+                                       sizeText.width, sizeText.height + 4);
+        
+        UILabel *lblTitle = [[UILabel alloc] initWithFrame:frameLabel];
+        [lblTitle setBackgroundColor:[UIColor clearColor]];
+        [lblTitle setTextAlignment:NSTextAlignmentCenter];
+        [lblTitle setFont:[UIFont systemFontOfSize:16]];
+        [lblTitle setTextColor:[UIColor blackColor]];
+        [lblTitle setText:title];
+        [self addSubview:lblTitle];
+        
+        if (value) {
+            
+            NSString *stringBadge = [NSString stringWithFormat:@"%ld", value];
+            CGSize sizeBadge = [APPUtility getSizeOfText:stringBadge
+                                                forWidth:80
+                                                withFont:[UIFont systemFontOfSize:12]];
+            
+            CGRect frameBadge = CGRectMake(CGRectGetMaxX(frameLabel) - 1,
+                                           CGRectGetMinY(frameLabel) - 2,
+                                           sizeBadge.width + 5, sizeBadge.height);
+            
+            if (frameBadge.size.width <= frameBadge.size.height)
+                frameBadge.size.width = frameBadge.size.height;
+            
+            UILabel *lblBadge = [[UILabel alloc] initWithFrame:frameBadge];
+            [lblBadge setBackgroundColor:[UIColor redColor]];
+            [lblBadge setTextAlignment:NSTextAlignmentCenter];
+            [lblBadge setFont:[UIFont systemFontOfSize:12]];
+            [lblBadge setTextColor:[UIColor whiteColor]];
+            [lblBadge setClipsToBounds:YES];
+            [lblBadge setText:stringBadge];
+            
+            [self addSubview:lblBadge];
+            
+            [lblBadge.layer setCornerRadius:frameBadge.size.height/2];
+        }
+    }
+    return self;
+}
+
+- (void)setSelected:(BOOL)selected {
+    UIColor *colorSelected = selected ? [UIColor lightGrayColor] : [UIColor whiteColor];
+    [self setBackgroundColor:colorSelected];
+}
+
 @end

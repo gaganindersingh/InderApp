@@ -8,8 +8,16 @@
 
 #import "FeedView.h"
 #import "FeedCell.h"
+#import "BadgeView.h"
 
 static NSString *REUSEID_CVFC = @"cvFeedCell";
+
+@interface FeedView () <UICollectionViewDelegate> {
+    NSMutableArray *arrFeedTypes;
+    NSInteger selectedType;
+}
+
+@end
 
 @implementation FeedView
 
@@ -28,12 +36,48 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
 }
 
 #pragma mark - Setup
--(void)setup
-{
+
+-(void)setup {
+    
+    arrFeedTypes = [[NSMutableArray alloc] initWithObjects:
+                    @"Requests", @"List Updates", @"Delivery Updates",
+                    @"Coupons", @"Delivery Requests", nil];
+    selectedType = 1;
+    
     NSArray *arrNib = [[NSBundle mainBundle]loadNibNamed:@"FeedView" owner:self options:nil];
     UIView *vwMyDetail = [arrNib lastObject];
     [self addSubview:vwMyDetail];
     
+    [self setupScrollView];
+}
+
+- (void)setupScrollView {
+    
+    CGFloat xOffset = 0;
+    
+    for (int i = 0; i < [arrFeedTypes count]; i ++) {
+        
+        NSString *strItemText = [arrFeedTypes objectAtIndex:i];
+        CGSize sizeText = [APPUtility getSizeOfText:strItemText
+                                           forWidth:200
+                                           withFont:[UIFont systemFontOfSize:16]];
+        CGRect frameBadgeView = CGRectMake(xOffset, 0, sizeText.width + 60, 40);
+        
+        BadgeView *objBadgeView = [[BadgeView alloc] initWithFrame:frameBadgeView
+                                                             title:strItemText
+                                                        badgeValue:i * 45];
+        [objBadgeView setTag:i + 1];
+        [objBadgeView setSelected:!i];
+        
+        UITapGestureRecognizer *tapOnTypeView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedOnTypeView:)];
+        [tapOnTypeView setNumberOfTapsRequired:1];
+        [objBadgeView addGestureRecognizer:tapOnTypeView];
+        
+        [scrollViewHeader addSubview:objBadgeView];
+        
+        xOffset = CGRectGetMaxX(frameBadgeView) + 1;
+    }
+    [scrollViewHeader setContentSize:CGSizeMake(xOffset, 40)];
 }
 
 #pragma mark - Initlization Methods
@@ -53,15 +97,35 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
     [collectionViewFeeds setCollectionViewLayout:flowLayout];
 }
 
+#pragma mark - Tap on Badge View
+
+- (void)tappedOnTypeView:(UITapGestureRecognizer *)recognizer {
+
+    if ([[recognizer view] tag] != selectedType) {
+        
+        BadgeView *tappedView = (BadgeView *)[recognizer view];
+        [tappedView setSelected:YES];
+        
+        BadgeView *lastSelectedView = (BadgeView *)[scrollViewHeader viewWithTag:selectedType];
+        [lastSelectedView setSelected:NO];
+        
+        selectedType = [tappedView tag];
+        
+        CGSize collSize = collectionViewFeeds.frame.size;
+        [collectionViewFeeds setContentOffset:CGPointMake(collSize.width * (selectedType - 1), 0)
+                                     animated:YES];
+    }
+}
+
 #pragma mark - UICollectionView Delegate & DataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 5;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     //    NSMutableArray *arrSection = [arrSpotsData objectAtIndex:section];
-    return 10;
+    return 5;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
@@ -71,12 +135,18 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     FeedCell *objFeedCell = (FeedCell *)[collectionViewFeeds dequeueReusableCellWithReuseIdentifier:REUSEID_CVFC forIndexPath:indexPath];
-    
-//    Spot *objSpot = [arrSpotsData objectAtIndex:indexPath.row];
-//    CollectionCellSpot *cell = (CollectionCellSpot *)[collectionView dequeueReusableCellWithReuseIdentifier:REUSEID_CV forIndexPath:indexPath];
-//    [cell fillCellWithCellText:objSpot];
-    [objFeedCell fillFeedCellValuesForIndex:indexPath.row];
+    [objFeedCell fillFeedCellValuesForIndex:indexPath.row
+                                  withTitle:[arrFeedTypes objectAtIndex:indexPath.row]];
+    [objFeedCell setSelectedBackgroundView:nil];
     return objFeedCell;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+    return NO;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

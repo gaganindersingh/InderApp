@@ -14,6 +14,7 @@
     __weak IBOutlet UITableView *tableViewInCell;
 }
 
-- (void)fillFeedCellValuesForIndex:(NSInteger)indexValue;
+- (void)fillFeedCellValuesForIndex:(NSInteger)indexValue
+                         withTitle:(NSString *)title;
 
 @end
