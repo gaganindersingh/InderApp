@@ -10,6 +10,8 @@
 		84C32FBD1A35721B0094493D /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FBB1A35721B0094493D /* FeedCell.m */; };
 		84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C32FBC1A35721B0094493D /* FeedCell.xib */; };
 		84C32FC21A35C8780094493D /* BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FC11A35C8780094493D /* BadgeView.m */; };
+		84C32FC71A36FDCD0094493D /* RequestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FC51A36FDCD0094493D /* RequestCell.m */; };
+		84C32FC81A36FDCD0094493D /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C32FC61A36FDCD0094493D /* RequestCell.xib */; };
 		84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2AE1A34325A00109E1D /* FeedViewController.m */; };
 		84E8A2B41A34332200109E1D /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A2B31A34332200109E1D /* FeedView.xib */; };
 		84E8A2B71A34333900109E1D /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2B61A34333900109E1D /* FeedView.m */; };
@@ -115,6 +117,9 @@
 		84C32FBC1A35721B0094493D /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCell.xib; path = FeedViewController/FeedCell/FeedCell.xib; sourceTree = "<group>"; };
 		84C32FC01A35C8780094493D /* BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BadgeView.h; path = FeedViewController/BadgeView/BadgeView.h; sourceTree = "<group>"; };
 		84C32FC11A35C8780094493D /* BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BadgeView.m; path = FeedViewController/BadgeView/BadgeView.m; sourceTree = "<group>"; };
+		84C32FC41A36FDCD0094493D /* RequestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestCell.h; path = FeedViewController/RequestCell/RequestCell.h; sourceTree = "<group>"; };
+		84C32FC51A36FDCD0094493D /* RequestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestCell.m; path = FeedViewController/RequestCell/RequestCell.m; sourceTree = "<group>"; };
+		84C32FC61A36FDCD0094493D /* RequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RequestCell.xib; path = FeedViewController/RequestCell/RequestCell.xib; sourceTree = "<group>"; };
 		84E8A2AD1A34325A00109E1D /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedViewController.h; path = FeedViewController/FeedViewController.h; sourceTree = "<group>"; };
 		84E8A2AE1A34325A00109E1D /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedViewController.m; path = FeedViewController/FeedViewController.m; sourceTree = "<group>"; };
 		84E8A2B31A34332200109E1D /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = FeedViewController/FeedView.xib; sourceTree = "<group>"; };
@@ -284,10 +289,21 @@
 			name = BadgeView;
 			sourceTree = "<group>";
 		};
+		84C32FC31A36FD5B0094493D /* RequestCell */ = {
+			isa = PBXGroup;
+			children = (
+				84C32FC41A36FDCD0094493D /* RequestCell.h */,
+				84C32FC51A36FDCD0094493D /* RequestCell.m */,
+				84C32FC61A36FDCD0094493D /* RequestCell.xib */,
+			);
+			name = RequestCell;
+			sourceTree = "<group>";
+		};
 		84E8A2A71A34313700109E1D /* FeedViewController */ = {
 			isa = PBXGroup;
 			children = (
 				84C32FBF1A35AD610094493D /* BadgeView */,
+				84C32FC31A36FD5B0094493D /* RequestCell */,
 				84C32FB81A3571D60094493D /* FeedCell */,
 				84E8A2AD1A34325A00109E1D /* FeedViewController.h */,
 				84E8A2AE1A34325A00109E1D /* FeedViewController.m */,
@@ -875,6 +891,7 @@
 				CEDBE54A1A205847009DDF8A /* MovingImages.xib in Resources */,
 				CEDBE3E91A2055CA009DDF8A /* LaunchScreen.xib in Resources */,
 				CE8ADD721A2B07D3006E8C36 /* Logo.png in Resources */,
+				84C32FC81A36FDCD0094493D /* RequestCell.xib in Resources */,
 				CEDBE3E61A2055CA009DDF8A /* Images.xcassets in Resources */,
 				CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */,
 				CEDBE5591A2071B7009DDF8A /* image2.jpg in Resources */,
@@ -899,6 +916,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDBE6031A209969009DDF8A /* WebserviceManager.m in Sources */,
+				84C32FC71A36FDCD0094493D /* RequestCell.m in Sources */,
 				CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */,
 				84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */,
 				CEDBE5391A2055EA009DDF8A /* LoginView.m in Sources */,

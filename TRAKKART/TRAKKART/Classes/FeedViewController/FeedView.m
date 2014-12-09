@@ -136,7 +136,8 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
     
     FeedCell *objFeedCell = (FeedCell *)[collectionViewFeeds dequeueReusableCellWithReuseIdentifier:REUSEID_CVFC forIndexPath:indexPath];
     [objFeedCell fillFeedCellValuesForIndex:indexPath.row
-                                  withTitle:[arrFeedTypes objectAtIndex:indexPath.row]];
+                                  withTitle:[arrFeedTypes objectAtIndex:indexPath.row]
+                           withSelectedType:selectedType];
     [objFeedCell setSelectedBackgroundView:nil];
     return objFeedCell;
 }

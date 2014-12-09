@@ -15,6 +15,7 @@
 }
 
 - (void)fillFeedCellValuesForIndex:(NSInteger)indexValue
-                         withTitle:(NSString *)title;
+                         withTitle:(NSString *)title
+                  withSelectedType:(NSInteger)selectedType;
 
 @end

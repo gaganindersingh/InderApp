@@ -7,21 +7,32 @@
 //
 
 #import "FeedCell.h"
+#import "RequestCell.h"
 
-@interface FeedCell () <UITableViewDelegate, UITableViewDataSource>
+@interface FeedCell () <UITableViewDelegate, UITableViewDataSource> {
+    NSInteger feedType;
+}
 
 @end
+
+static NSString *REUSEID_REQ = @"RequestCell";
 
 @implementation FeedCell
 
 - (void)awakeFromNib {
     // Initialization code
+    
+    [tableViewInCell registerNib:[UINib nibWithNibName:@"RequestCell" bundle:nil]
+          forCellReuseIdentifier:REUSEID_REQ];
 }
 
 - (void)fillFeedCellValuesForIndex:(NSInteger)indexValue
-                         withTitle:(NSString *)title {
+                         withTitle:(NSString *)title
+                  withSelectedType:(NSInteger)selectedType {
     
+    feedType = selectedType;
     [lblTitleForCell setText:title];
+    [tableViewInCell reloadData];
 }
 
 #pragma mark - UITableView Delegate & DataSource
@@ -32,11 +43,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *cellID = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell)
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    [cell.textLabel setText:[NSString stringWithFormat:@"Index row : %ld", indexPath.row]];
+    id cell = nil;
+    if (feedType == 1) {
+        RequestCell *cellReq = (RequestCell *)[tableViewInCell dequeueReusableCellWithIdentifier:REUSEID_REQ];
+        [cellReq fillRequestCellWithRequest:@"Brad Pitt wants to join your list \"Ki le ke aana\""];
+        cell = cellReq;
+    }
+    else {
+        static NSString *cellID = @"Cell";
+        UITableViewCell *cellSimple = [tableView dequeueReusableCellWithIdentifier:cellID];
+        if (!cellSimple)
+            cellSimple = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        [cellSimple.textLabel setText:[NSString stringWithFormat:@"Index row : %ld", indexPath.row]];
+        cell = cellSimple;
+    }
     return cell;
 }
 
@@ -44,21 +64,27 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
-//}
-//
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-//    return YES;
-//}
-//
-//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    if (editingStyle == UITableViewCellEditingStyleDelete) {
-//        
-//    }
-//    else {
-//        
-//    }
-//}
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray *arrEditActions = nil;
+    if (feedType == 1) {
+    UITableViewRowAction *moreAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Accept" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        // show UIActionSheet
+    }];
+    moreAction.backgroundColor = [UIColor colorWithRed:116/255.0f green:201/255.0f blue:0 alpha:1.0f];
+    
+    UITableViewRowAction *flagAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Reject" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        // flag the row
+    }];
+    flagAction.backgroundColor = [UIColor colorWithRed:249/255.0f green:38/255.0f blue:0 alpha:1.0f];
+    
+        arrEditActions = @[moreAction, flagAction];
+    }
+    return arrEditActions;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
 @end
