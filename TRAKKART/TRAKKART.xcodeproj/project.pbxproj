@@ -15,6 +15,8 @@
 		84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2AE1A34325A00109E1D /* FeedViewController.m */; };
 		84E8A2B41A34332200109E1D /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E8A2B31A34332200109E1D /* FeedView.xib */; };
 		84E8A2B71A34333900109E1D /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8A2B61A34333900109E1D /* FeedView.m */; };
+		84EF8FBD1A3A14B300C9B980 /* arrow_feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EF8FBB1A3A14B300C9B980 /* arrow_feed.png */; };
+		84EF8FBE1A3A14B300C9B980 /* arrow_feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EF8FBC1A3A14B300C9B980 /* arrow_feed@2x.png */; };
 		CE464FA71A24FAF900ED386F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA61A24FAF900ED386F /* StartUpViewController.m */; };
 		CE464FAA1A24FB5900ED386F /* StartUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE464FA91A24FB5900ED386F /* StartUpView.m */; };
 		CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE464FAB1A24FB8A00ED386F /* StartUpView.xib */; };
@@ -125,6 +127,8 @@
 		84E8A2B31A34332200109E1D /* FeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedView.xib; path = FeedViewController/FeedView.xib; sourceTree = "<group>"; };
 		84E8A2B51A34333900109E1D /* FeedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedView.h; path = FeedViewController/FeedView.h; sourceTree = "<group>"; };
 		84E8A2B61A34333900109E1D /* FeedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedView.m; path = FeedViewController/FeedView.m; sourceTree = "<group>"; };
+		84EF8FBB1A3A14B300C9B980 /* arrow_feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_feed.png; sourceTree = "<group>"; };
+		84EF8FBC1A3A14B300C9B980 /* arrow_feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_feed@2x.png"; sourceTree = "<group>"; };
 		CE464FA51A24FAF900ED386F /* StartUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpViewController.h; sourceTree = "<group>"; };
 		CE464FA61A24FAF900ED386F /* StartUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpViewController.m; sourceTree = "<group>"; };
 		CE464FA81A24FB5900ED386F /* StartUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpView.h; sourceTree = "<group>"; };
@@ -312,6 +316,15 @@
 				84E8A2B31A34332200109E1D /* FeedView.xib */,
 			);
 			name = FeedViewController;
+			sourceTree = "<group>";
+		};
+		84EF8FBA1A3A14B300C9B980 /* FeedViewAssets */ = {
+			isa = PBXGroup;
+			children = (
+				84EF8FBB1A3A14B300C9B980 /* arrow_feed.png */,
+				84EF8FBC1A3A14B300C9B980 /* arrow_feed@2x.png */,
+			);
+			path = FeedViewAssets;
 			sourceTree = "<group>";
 		};
 		CE464FA41A24FAD000ED386F /* StartUpScreen */ = {
@@ -573,6 +586,7 @@
 		CEDBE5511A2071B7009DDF8A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				84EF8FBA1A3A14B300C9B980 /* FeedViewAssets */,
 				CE8ADD541A2B07D3006E8C36 /* Log In Screen */,
 				CE8ADD491A2AE8BC006E8C36 /* SignUp */,
 				CE8ADD421A2ACC45006E8C36 /* DriverSignUpIcon */,
@@ -880,6 +894,7 @@
 				CEDBE3E41A2055CA009DDF8A /* Main.storyboard in Resources */,
 				CE8ADD691A2B07D3006E8C36 /* Background@2x.png in Resources */,
 				CEDBE5371A2055EA009DDF8A /* BaseView.xib in Resources */,
+				84EF8FBE1A3A14B300C9B980 /* arrow_feed@2x.png in Resources */,
 				CEC319C21A2E345D003445DF /* Email@2x.png in Resources */,
 				CEC319C61A2E345D003445DF /* Facebook@3x.png in Resources */,
 				CEDBE5581A2071B7009DDF8A /* image1.jpg in Resources */,
@@ -895,6 +910,7 @@
 				CEDBE3E61A2055CA009DDF8A /* Images.xcassets in Resources */,
 				CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */,
 				CEDBE5591A2071B7009DDF8A /* image2.jpg in Resources */,
+				84EF8FBD1A3A14B300C9B980 /* arrow_feed.png in Resources */,
 				CEDBE5491A205847009DDF8A /* MovingImageCollectionViewCell.xib in Resources */,
 				CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */,
 				CE5317761A32F18F00D4C213 /* MainScreenView.xib in Resources */,

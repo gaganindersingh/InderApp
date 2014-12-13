@@ -17,7 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-   
+    
+    NSDictionary *dictTitleText = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   [UIFont fontWithName:@"BebasNeue" size:30], NSFontAttributeName,
+                                   [UIColor whiteColor], NSForegroundColorAttributeName, nil];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithWhite:147/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:dictTitleText];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     UIStoryboard *storyboard = nil;
     

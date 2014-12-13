@@ -26,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="0lg-CI-FuE" secondAttribute="trailing" constant="8" id="6Xt-GV-34E"/>
                             <constraint firstItem="0lg-CI-FuE" firstAttribute="top" secondItem="7ci-ak-DTB" secondAttribute="top" id="Leu-Rk-8hw"/>
@@ -35,9 +35,10 @@
                             <constraint firstItem="0lg-CI-FuE" firstAttribute="leading" secondItem="7ci-ak-DTB" secondAttribute="leading" constant="8" id="qd2-xq-XtL"/>
                         </constraints>
                     </view>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-97-SgJ">
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-97-SgJ">
                         <rect key="frame" x="0.0" y="35" width="400" height="365"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <connections>
                             <outlet property="dataSource" destination="gTV-IL-0wX" id="zlf-Qg-c63"/>
                             <outlet property="delegate" destination="gTV-IL-0wX" id="dds-04-UrL"/>
@@ -46,6 +47,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="XBY-97-SgJ" secondAttribute="bottom" id="0ID-U3-U9F"/>
                 <constraint firstItem="7ci-ak-DTB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Gh-H5-Q0f"/>

@@ -9,7 +9,7 @@
 #import "FeedCell.h"
 #import "RequestCell.h"
 
-@interface FeedCell () <UITableViewDelegate, UITableViewDataSource> {
+@interface FeedCell () <UITableViewDelegate, UITableViewDataSource, RequestCellDelegate> {
     NSInteger feedType;
 }
 
@@ -24,6 +24,7 @@ static NSString *REUSEID_REQ = @"RequestCell";
     
     [tableViewInCell registerNib:[UINib nibWithNibName:@"RequestCell" bundle:nil]
           forCellReuseIdentifier:REUSEID_REQ];
+    [tableViewInCell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
 }
 
 - (void)fillFeedCellValuesForIndex:(NSInteger)indexValue
@@ -33,6 +34,15 @@ static NSString *REUSEID_REQ = @"RequestCell";
     feedType = selectedType;
     [lblTitleForCell setText:title];
     [tableViewInCell reloadData];
+}
+
+#pragma mark - Request Cell Delegate
+
+- (void)customAccessoryButtonTappedForIndex:(NSInteger)rowIndex {
+    
+    NSIndexPath *indexForRow = [NSIndexPath indexPathForRow:rowIndex inSection:0];
+    [tableViewInCell.delegate tableView:tableViewInCell
+           editActionsForRowAtIndexPath:indexForRow];
 }
 
 #pragma mark - UITableView Delegate & DataSource
@@ -46,7 +56,9 @@ static NSString *REUSEID_REQ = @"RequestCell";
     id cell = nil;
     if (feedType == 1) {
         RequestCell *cellReq = (RequestCell *)[tableViewInCell dequeueReusableCellWithIdentifier:REUSEID_REQ];
-        [cellReq fillRequestCellWithRequest:@"Brad Pitt wants to join your list \"Ki le ke aana\""];
+        NSString *strRequest = @"Brad Pitt wants to join your list \"Ki le ke aana?\"";
+        [cellReq fillRequestCellWithRequest:strRequest withIndexForRow:indexPath.row];
+        [cellReq setDelegate:self];
         cell = cellReq;
     }
     else {

@@ -8,11 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RequestCellDelegate <NSObject>
+
+- (void)customAccessoryButtonTappedForIndex:(NSInteger)rowIndex;
+
+@end
+
 @interface RequestCell : UITableViewCell {
     
     __weak IBOutlet UILabel *lblRequestText;
+    __weak IBOutlet UIButton *btnCustomAccessory;
 }
 
-- (void)fillRequestCellWithRequest:(NSString *)strRequest;
+- (void)fillRequestCellWithRequest:(NSString *)strRequest
+                   withIndexForRow:(NSInteger)rowIndex;
+
+@property (assign, nonatomic) id<RequestCellDelegate> delegate;
 
 @end

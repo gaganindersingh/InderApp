@@ -25,7 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        [self setBackgroundColor:[UIColor whiteColor]];
+        [self setBackgroundColor:[UIColor colorWithWhite:1.f alpha:0.4f]];
         
         CGSize sizeText = [APPUtility getSizeOfText:title
                                            forWidth:frame.size.width
@@ -74,7 +74,11 @@
 }
 
 - (void)setSelected:(BOOL)selected {
-    UIColor *colorSelected = selected ? [UIColor lightGrayColor] : [UIColor whiteColor];
+    
+    UIColor *selectedColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
+    UIColor *simpleColor = [UIColor colorWithWhite:1.f alpha:0.4f];
+    
+    UIColor *colorSelected = selected ? selectedColor : simpleColor;
     [self setBackgroundColor:colorSelected];
 }
 

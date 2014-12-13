@@ -87,7 +87,7 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
     [collectionViewFeeds registerNib:collCellNib forCellWithReuseIdentifier:REUSEID_CVFC];
     
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    CGSize cellSize = CGSizeMake(screenSize.width, screenSize.height - 40);
+    CGSize cellSize = CGSizeMake(screenSize.width, screenSize.height - 104);
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:cellSize];
