@@ -27,9 +27,11 @@
         
         [self setBackgroundColor:[UIColor colorWithWhite:1.f alpha:0.4f]];
         
+        UIFont *fontUsed = [UIFont fontWithName:_kFontBebasNeueBold size:25];
+        
         CGSize sizeText = [APPUtility getSizeOfText:title
                                            forWidth:frame.size.width
-                                           withFont:[UIFont systemFontOfSize:16]];
+                                           withFont:fontUsed];
         
         CGRect frameLabel = CGRectMake((frame.size.width - sizeText.width) / 2,
                                        (frame.size.height - sizeText.height) / 2,
@@ -38,8 +40,9 @@
         UILabel *lblTitle = [[UILabel alloc] initWithFrame:frameLabel];
         [lblTitle setBackgroundColor:[UIColor clearColor]];
         [lblTitle setTextAlignment:NSTextAlignmentCenter];
-        [lblTitle setFont:[UIFont systemFontOfSize:16]];
-        [lblTitle setTextColor:[UIColor blackColor]];
+        [lblTitle setFont:fontUsed];
+//        [lblTitle setFont:[UIFont systemFontOfSize:16]];
+        [lblTitle setTextColor:[UIColor darkGrayColor]];
         [lblTitle setText:title];
         [self addSubview:lblTitle];
         
@@ -50,7 +53,7 @@
                                                 forWidth:80
                                                 withFont:[UIFont systemFontOfSize:12]];
             
-            CGRect frameBadge = CGRectMake(CGRectGetMaxX(frameLabel) - 1,
+            CGRect frameBadge = CGRectMake(CGRectGetMaxX(frameLabel) - 5,
                                            CGRectGetMinY(frameLabel) - 2,
                                            sizeBadge.width + 5, sizeBadge.height);
             

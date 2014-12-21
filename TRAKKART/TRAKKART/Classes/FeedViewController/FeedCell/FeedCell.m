@@ -22,6 +22,8 @@ static NSString *REUSEID_REQ = @"RequestCell";
 - (void)awakeFromNib {
     // Initialization code
     
+    [lblTitleForCell setFont:[UIFont fontWithName:_kFontBebasNeueBold size:20]];
+    
     [tableViewInCell registerNib:[UINib nibWithNibName:@"RequestCell" bundle:nil]
           forCellReuseIdentifier:REUSEID_REQ];
     [tableViewInCell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -56,7 +58,7 @@ static NSString *REUSEID_REQ = @"RequestCell";
     id cell = nil;
     if (feedType == 1) {
         RequestCell *cellReq = (RequestCell *)[tableViewInCell dequeueReusableCellWithIdentifier:REUSEID_REQ];
-        NSString *strRequest = @"Brad Pitt wants to join your list \"Ki le ke aana?\"";
+        NSString *strRequest = @"Brad Pitt wants to join your Party List";
         [cellReq fillRequestCellWithRequest:strRequest withIndexForRow:indexPath.row];
         [cellReq setDelegate:self];
         cell = cellReq;

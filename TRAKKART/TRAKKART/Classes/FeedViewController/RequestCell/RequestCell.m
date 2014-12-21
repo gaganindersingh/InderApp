@@ -12,6 +12,12 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [lblRequestText setFont:[UIFont fontWithName:_kFontBebasNeueRegular size:22]];
+    
+    [imgViewProfile.layer setCornerRadius:25.0f];
+    [imgViewProfile.layer setBorderColor:[UIColor blackColor].CGColor];
+    [imgViewProfile.layer setBorderWidth:0.5f];
+    
     self.layoutMargins = UIEdgeInsetsZero;
     self.preservesSuperviewLayoutMargins = NO;
 }

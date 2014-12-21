@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8480E6771A46855200DF06DD /* BebasNeue Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6721A46855200DF06DD /* BebasNeue Bold.otf */; };
+		8480E6781A46855200DF06DD /* BebasNeue Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6731A46855200DF06DD /* BebasNeue Book.otf */; };
+		8480E6791A46855200DF06DD /* BebasNeue Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6741A46855200DF06DD /* BebasNeue Light.otf */; };
+		8480E67A1A46855200DF06DD /* BebasNeue Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6751A46855200DF06DD /* BebasNeue Regular.otf */; };
+		8480E67B1A46855200DF06DD /* BebasNeue Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6761A46855200DF06DD /* BebasNeue Thin.otf */; };
+		8480E67D1A46A8B100DF06DD /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8480E67C1A46A8B100DF06DD /* placeholder.png */; };
+		8480E6811A46A8F300DF06DD /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6801A46A8F300DF06DD /* placeholder@2x.png */; };
+		8480E6861A46AD6C00DF06DD /* OtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8480E6841A46AD6C00DF06DD /* OtherCell.m */; };
+		8480E6871A46AD6C00DF06DD /* OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8480E6851A46AD6C00DF06DD /* OtherCell.xib */; };
 		84C32FBD1A35721B0094493D /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FBB1A35721B0094493D /* FeedCell.m */; };
 		84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C32FBC1A35721B0094493D /* FeedCell.xib */; };
 		84C32FC21A35C8780094493D /* BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C32FC11A35C8780094493D /* BadgeView.m */; };
@@ -114,6 +123,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8480E6721A46855200DF06DD /* BebasNeue Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Bold.otf"; sourceTree = "<group>"; };
+		8480E6731A46855200DF06DD /* BebasNeue Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Book.otf"; sourceTree = "<group>"; };
+		8480E6741A46855200DF06DD /* BebasNeue Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Light.otf"; sourceTree = "<group>"; };
+		8480E6751A46855200DF06DD /* BebasNeue Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Regular.otf"; sourceTree = "<group>"; };
+		8480E6761A46855200DF06DD /* BebasNeue Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue Thin.otf"; sourceTree = "<group>"; };
+		8480E67C1A46A8B100DF06DD /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		8480E6801A46A8F300DF06DD /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		8480E6831A46AD6C00DF06DD /* OtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtherCell.h; path = FeedViewController/OtherCell/OtherCell.h; sourceTree = "<group>"; };
+		8480E6841A46AD6C00DF06DD /* OtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OtherCell.m; path = FeedViewController/OtherCell/OtherCell.m; sourceTree = "<group>"; };
+		8480E6851A46AD6C00DF06DD /* OtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OtherCell.xib; path = FeedViewController/OtherCell/OtherCell.xib; sourceTree = "<group>"; };
 		84C32FBA1A35721B0094493D /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedCell.h; path = FeedViewController/FeedCell/FeedCell.h; sourceTree = "<group>"; };
 		84C32FBB1A35721B0094493D /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedCell.m; path = FeedViewController/FeedCell/FeedCell.m; sourceTree = "<group>"; };
 		84C32FBC1A35721B0094493D /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCell.xib; path = FeedViewController/FeedCell/FeedCell.xib; sourceTree = "<group>"; };
@@ -274,6 +293,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8480E6821A46AD3600DF06DD /* OtherCell */ = {
+			isa = PBXGroup;
+			children = (
+				8480E6831A46AD6C00DF06DD /* OtherCell.h */,
+				8480E6841A46AD6C00DF06DD /* OtherCell.m */,
+				8480E6851A46AD6C00DF06DD /* OtherCell.xib */,
+			);
+			name = OtherCell;
+			sourceTree = "<group>";
+		};
 		84C32FB81A3571D60094493D /* FeedCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +335,7 @@
 		84E8A2A71A34313700109E1D /* FeedViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8480E6821A46AD3600DF06DD /* OtherCell */,
 				84C32FBF1A35AD610094493D /* BadgeView */,
 				84C32FC31A36FD5B0094493D /* RequestCell */,
 				84C32FB81A3571D60094493D /* FeedCell */,
@@ -321,6 +351,8 @@
 		84EF8FBA1A3A14B300C9B980 /* FeedViewAssets */ = {
 			isa = PBXGroup;
 			children = (
+				8480E6801A46A8F300DF06DD /* placeholder@2x.png */,
+				8480E67C1A46A8B100DF06DD /* placeholder.png */,
 				84EF8FBB1A3A14B300C9B980 /* arrow_feed.png */,
 				84EF8FBC1A3A14B300C9B980 /* arrow_feed@2x.png */,
 			);
@@ -442,6 +474,11 @@
 		CEC319C81A2E4EA6003445DF /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				8480E6721A46855200DF06DD /* BebasNeue Bold.otf */,
+				8480E6731A46855200DF06DD /* BebasNeue Book.otf */,
+				8480E6741A46855200DF06DD /* BebasNeue Light.otf */,
+				8480E6751A46855200DF06DD /* BebasNeue Regular.otf */,
+				8480E6761A46855200DF06DD /* BebasNeue Thin.otf */,
 				CEC319CB1A2EA3A8003445DF /* SteelTongs.ttf */,
 				CEC319C91A2E4EA6003445DF /* BebasNeue.ttf */,
 			);
@@ -860,12 +897,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8480E6871A46AD6C00DF06DD /* OtherCell.xib in Resources */,
 				CE8ADD4F1A2AE8C6006E8C36 /* Checked_icon@3x.png in Resources */,
 				CE8ADD741A2B07D3006E8C36 /* Logo@3x.png in Resources */,
 				CE8ADD731A2B07D3006E8C36 /* Logo@2x.png in Resources */,
 				CEDBE55A1A2071B7009DDF8A /* image3.jpg in Resources */,
 				CEC319CA1A2E4EA6003445DF /* BebasNeue.ttf in Resources */,
 				CEDBE55C1A2071B7009DDF8A /* image5.jpg in Resources */,
+				8480E6811A46A8F300DF06DD /* placeholder@2x.png in Resources */,
 				CEA6AE591A2555610042B111 /* DriverSignUpView.xib in Resources */,
 				CE8ADD4D1A2AE8C6006E8C36 /* Checked_icon.png in Resources */,
 				CE8ADD6A1A2B07D3006E8C36 /* Background@3x.png in Resources */,
@@ -873,6 +912,7 @@
 				CE8ADD6B1A2B07D3006E8C36 /* ForgotPassword.png in Resources */,
 				CEC319C51A2E345D003445DF /* Facebook@2x.png in Resources */,
 				CE8ADD461A2ACC45006E8C36 /* arrow_icon.png in Resources */,
+				8480E67D1A46A8B100DF06DD /* placeholder.png in Resources */,
 				CEC319D01A2EA566003445DF /* Login_icon@2x.png in Resources */,
 				CE8ADD711A2B07D3006E8C36 /* LogIn@3x.png in Resources */,
 				CEC319C11A2E345D003445DF /* Email.png in Resources */,
@@ -885,10 +925,12 @@
 				CE8ADD6C1A2B07D3006E8C36 /* ForgotPassword@2x.png in Resources */,
 				CEC319C31A2E345D003445DF /* Email@3x.png in Resources */,
 				84C32FBE1A35721B0094493D /* FeedCell.xib in Resources */,
+				8480E6771A46855200DF06DD /* BebasNeue Bold.otf in Resources */,
 				CEC319C41A2E345D003445DF /* Facebook.png in Resources */,
 				CEDBE54F1A206331009DDF8A /* Logo5.png in Resources */,
 				CEA6AE531A2554730042B111 /* SignUpView.xib in Resources */,
 				CEC319D11A2EA566003445DF /* Login_icon@3x.png in Resources */,
+				8480E6781A46855200DF06DD /* BebasNeue Book.otf in Resources */,
 				CEDBE55B1A2071B7009DDF8A /* image4.jpg in Resources */,
 				CE8ADD4E1A2AE8C6006E8C36 /* Checked_icon@2x.png in Resources */,
 				CEDBE3E41A2055CA009DDF8A /* Main.storyboard in Resources */,
@@ -898,6 +940,7 @@
 				CEC319C21A2E345D003445DF /* Email@2x.png in Resources */,
 				CEC319C61A2E345D003445DF /* Facebook@3x.png in Resources */,
 				CEDBE5581A2071B7009DDF8A /* image1.jpg in Resources */,
+				8480E67A1A46855200DF06DD /* BebasNeue Regular.otf in Resources */,
 				CEDBE5501A206331009DDF8A /* Logo6.png in Resources */,
 				CE8ADD471A2ACC45006E8C36 /* arrow_icon@2x.png in Resources */,
 				CE8ADD481A2ACC45006E8C36 /* arrow_icon@3x.png in Resources */,
@@ -911,7 +954,9 @@
 				CE8ADD701A2B07D3006E8C36 /* LogIn@2x.png in Resources */,
 				CEDBE5591A2071B7009DDF8A /* image2.jpg in Resources */,
 				84EF8FBD1A3A14B300C9B980 /* arrow_feed.png in Resources */,
+				8480E6791A46855200DF06DD /* BebasNeue Light.otf in Resources */,
 				CEDBE5491A205847009DDF8A /* MovingImageCollectionViewCell.xib in Resources */,
+				8480E67B1A46855200DF06DD /* BebasNeue Thin.otf in Resources */,
 				CE464FAC1A24FB8A00ED386F /* StartUpView.xib in Resources */,
 				CE5317761A32F18F00D4C213 /* MainScreenView.xib in Resources */,
 			);
@@ -932,6 +977,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDBE6031A209969009DDF8A /* WebserviceManager.m in Sources */,
+				8480E6861A46AD6C00DF06DD /* OtherCell.m in Sources */,
 				84C32FC71A36FDCD0094493D /* RequestCell.m in Sources */,
 				CE8ADD411A2A23F7006E8C36 /* SignUp.m in Sources */,
 				84E8A2AF1A34325A00109E1D /* FeedViewController.m in Sources */,

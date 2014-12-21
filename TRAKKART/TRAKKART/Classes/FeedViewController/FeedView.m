@@ -55,6 +55,8 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
     
     CGFloat xOffset = 0;
     
+    [scrollViewHeader setBackgroundColor:[UIColor colorWithWhite:1.f alpha:0.4f]];
+    
     for (int i = 0; i < [arrFeedTypes count]; i ++) {
         
         NSString *strItemText = [arrFeedTypes objectAtIndex:i];
@@ -115,6 +117,27 @@ static NSString *REUSEID_CVFC = @"cvFeedCell";
         [collectionViewFeeds setContentOffset:CGPointMake(collSize.width * (selectedType - 1), 0)
                                      animated:YES];
     }
+}
+
+#pragma mark - ScrollView delegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    CGFloat pageWidth = scrollView.frame.size.width;
+    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+    for (int i = 0; i < 5; i++) {
+        BadgeView *objBadgeView = (BadgeView *)[scrollViewHeader viewWithTag:(i + 1)];
+        [objBadgeView setSelected:(i == page)];
+    }
+        
+    BadgeView *viewToSelect = (BadgeView *)[scrollViewHeader viewWithTag:page];
+    
+    CGFloat xOffset = viewToSelect.frame.origin.x;
+    if (xOffset + 320 >= scrollViewHeader.contentSize.width)
+        xOffset = scrollViewHeader.contentSize.width - [UIScreen mainScreen].bounds.size.width;
+    
+    [scrollViewHeader setContentOffset:CGPointMake(xOffset, 0)];
 }
 
 #pragma mark - UICollectionView Delegate & DataSource

@@ -39,6 +39,11 @@
 	<array>
 		<string>SteelTongs.ttf</string>
 		<string>BebasNeue.ttf</string>
+		<string>BebasNeue Bold.otf</string>
+		<string>BebasNeue Book.otf</string>
+		<string>BebasNeue Light.otf</string>
+		<string>BebasNeue Regular.otf</string>
+		<string>BebasNeue Thin.otf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>Main</string>

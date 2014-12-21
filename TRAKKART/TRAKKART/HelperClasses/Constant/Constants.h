@@ -15,5 +15,11 @@
 
 #define KLogoY_AxisFromTop @"60"
 
+#define _kFontBebasNeue          @"BebasNeue"
+#define _kFontBebasNeueBook      @"BebasNeueBook"
+#define _kFontBebasNeueLight     @"BebasNeueLight"
+#define _kFontBebasNeueBold      @"BebasNeueBold"
+#define _kFontBebasNeueThin      @"BebasNeueThin"
+#define _kFontBebasNeueRegular   @"BebasNeueRegular"
 
 #endif

@@ -18,6 +18,7 @@
     
     __weak IBOutlet UILabel *lblRequestText;
     __weak IBOutlet UIButton *btnCustomAccessory;
+    __weak IBOutlet UIImageView *imgViewProfile;
 }
 
 - (void)fillRequestCellWithRequest:(NSString *)strRequest
